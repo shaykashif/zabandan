@@ -7,3 +7,4 @@ site/
 site_preview/
 # Aktiv Grotesk is a licensed font: kept locally, not redistributed
 site_src/static/fonts/
+.wrangler/
