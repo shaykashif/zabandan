@@ -1,41 +1,69 @@
 # Deploying zabandan.shaykas.com
 
-The site is static: `python scripts/build_site.py` writes it to `site/`. It's served by a
-Cloudflare Worker with static assets (`wrangler.jsonc`), which also attaches the
-`zabandan.shaykas.com` custom domain and its DNS record on the shaykas.com zone.
+The site is static and committed, built, in `site/`. The Oracle server serves it with nginx
+straight from a git checkout, so publishing is: build here, commit, push, pull on the server.
 
-## Deploy
+## Publish an update
+
+On this machine:
 
 ```bash
 python scripts/build_site.py
-npx wrangler deploy
+git add -A && git commit -m "Update site" && git push
 ```
 
-The first time, run `npx wrangler login` and approve it in the browser. The Aktiv Grotesk
-fonts must be in `site_src/static/fonts/` before building (they're licensed and not in git).
+On the server (MobaXterm):
 
-## After adding or changing poems
+```bash
+/var/www/zabandan/deploy/update.sh
+```
+
+## First-time setup on the server
+
+```bash
+sudo git clone https://github.com/shaykashif/zabandan.git /var/www/zabandan
+sudo chown -R $USER /var/www/zabandan
+sudo cp /var/www/zabandan/deploy/nginx-zabandan.conf /etc/nginx/sites-available/zabandan
+sudo ln -s /etc/nginx/sites-available/zabandan /etc/nginx/sites-enabled/
+sudo nginx -t && sudo systemctl reload nginx
+```
+
+If shaykas.com's nginx server block listens on 443 (Cloudflare "Full" SSL), copy its `listen`
+and `ssl_*` lines into the Zabandan block. Check `curl -H "Host: zabandan.shaykas.com"
+http://localhost/` returns the home page before switching DNS.
+
+## Switching DNS from the Cloudflare Worker
+
+The site was first served by a Cloudflare Worker, which owns the `zabandan` DNS record. Once
+the server is serving it:
+
+1. Remove the Worker and its custom domain: `npx wrangler delete zabandan` (or Cloudflare
+   dashboard → Workers & Pages → zabandan → Settings → Delete).
+2. Add a DNS record in Cloudflare: type A, name `zabandan`, content the server's IP (the same
+   one shaykas.com points to), proxied.
+
+## Adding or changing poems
 
 ```bash
 python scripts/annotate_poem.py <poem>
 python scripts/curate_notes.py <poem>
 python scripts/build_site.py
-npx wrangler deploy
 ```
+
+Then publish as above.
 
 ## What's in `site/`
 
 - `index.html`: the list of poems and the search
 - `<poem>/index.html`: one reader page per poem, at `/<poem>/`
-- `assets/`: stylesheet, scripts, favicon and fonts. Asset URLs carry a content hash, and
-  `_headers` caches them for a year
-- `404.html` (served for unknown paths), `sitemap.xml`, `robots.txt`
+- `assets/`: stylesheet, scripts, favicon and fonts. Asset URLs carry a content hash
+- `404.html`, `sitemap.xml`, `robots.txt` (`_headers` is for Cloudflare and unused by nginx)
 
 ## Poems still in copyright
 
 A nazm's data file (`data/nazms/<poem>.yaml`) can set `publish: false`; `build_site.py` then
 leaves it out (use `--include-unpublished --out site_preview` to read it locally, and never
-deploy that folder). Published poems can carry `citation` and `copyright` lines, shown at the
+publish that folder). Published poems can carry `citation` and `copyright` lines, shown at the
 foot of the page. *Kabhī Kabhī* (Sahir Ludhianvi, d. 1980) is published this way.
 
 ## Open items
