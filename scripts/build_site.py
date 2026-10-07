@@ -216,6 +216,9 @@ def search_entry(p: dict) -> dict:
     return {"id": p["id"], "meta": meta, "meta_ur": p["title_ur"], "lines": lines}
 
 
+INTRO_DESC = ('Zabandan is a database of classical Urdu poetry that I have translated to English. My goal is to capture cultural and poetic nuance often lost in translation, conveying the true beauty and depth of Urdu literature to non-native readers and fostering an appreciation among Western audiences.')
+
+
 def index_page(poems: list[dict], assets: dict) -> str:
     rows = []
     for p in poems:
@@ -235,7 +238,8 @@ def index_page(poems: list[dict], assets: dict) -> str:
     </div>
 
     <div class="intro">
-      <p>Zabandan is an aide for reading classical Urdu ghazals and nazms, allowing non-native readers to truly appreciate the depth, beauty, and poetic meaning behind each word.</p>
+      <p>Zabandan is a database of classical Urdu poetry that I have translated to English. My goal is to capture cultural and poetic nuance often lost in translation, conveying the true beauty and depth of Urdu literature to non-native readers and fostering an appreciation among Western audiences.</p>
+      <p>I periodically add poems (mostly ghazals and nazms) that I translate in my free time to the database, and on occasion will also offer interpretations of the work. Each entry has a Romanized transliteration and a literal and poetic English meaning, as well as contextually appropriate definitions of words. If you'd like to suggest a work to translate, notice an error, or have a suggestion, please reach out to me at shay [at] shaykas [dot] com.</p>
     </div>
 
     <div class="search" role="search">
@@ -252,8 +256,7 @@ def index_page(poems: list[dict], assets: dict) -> str:
     <p class="empty" id="empty" hidden>No poems match. Try a shorter word, or the Roman spelling without accents.</p>
 {CREDIT.format(year=date.today().year)}
     {json_script("search-data", [search_entry(p) for p in poems])}"""
-    desc = ("Zabandan is an aide for reading classical Urdu ghazals and nazms, allowing non-native readers "
-            "to truly appreciate the depth, beauty, and poetic meaning behind each word.")
+    desc = INTRO_DESC
     ld = {"@context": "https://schema.org", "@type": "WebSite", "@id": SITE_ID, "url": BASE_URL + "/",
           "name": "Zabandan", "alternateName": "زباندان", "description": desc, "inLanguage": "en",
           "author": PERSON, "publisher": PERSON,
