@@ -46,9 +46,22 @@ def json_script(element_id: str, data) -> str:
     return f'<script type="application/json" id="{element_id}">{payload}</script>'
 
 
+# The same Person node shaykas.com publishes, so search engines tie the two sites together.
+PERSON = {"@type": "Person", "@id": "https://shaykas.com/#person", "name": "Shay Kashif",
+          "alternateName": "Shayaan Kashif", "url": "https://shaykas.com/"}
+SITE_ID = BASE_URL + "/#website"
+
+
+def json_ld(data) -> str:
+    payload = json.dumps(data, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    return f'<script type="application/ld+json">{payload}</script>'
+
+
 def page(*, title: str, description: str, path: str, body: str, assets: dict, scripts: list[str],
-         og_type: str = "website", main_class: str = "", body_class: str = "") -> str:
+         og_type: str = "website", main_class: str = "", body_class: str = "",
+         image: str = "og/site.png", image_alt: str = "Zabandan", ld: dict | None = None) -> str:
     url = BASE_URL + path
+    img = f"{BASE_URL}/assets/{image}?v={assets[image]}"
     # The ink animation (assets/ink.js) is switched off for now: it froze part-way on some loads.
     # To bring it back, add "ink.js" to this list and restore the .js-ink head script and the
     # .js-ink rules in site.css (see git history).
@@ -66,8 +79,19 @@ def page(*, title: str, description: str, path: str, body: str, assets: dict, sc
   <meta property="og:type" content="{og_type}" />
   <meta property="og:url" content="{url}" />
   <meta property="og:site_name" content="Zabandan" />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="{img}" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="{e(image_alt)}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{e(title)}" />
+  <meta name="twitter:description" content="{e(description)}" />
+  <meta name="twitter:image" content="{img}" />
+  <meta name="author" content="Shay Kashif" />
   <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg?v={assets['favicon.svg']}" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/icons/favicon-48.png?v={assets['icons/favicon-48.png']}" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v={assets['icons/apple-touch-icon.png']}" />
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#f6f2e6" />
   <script>try{{var t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");document.documentElement.dataset.theme=t;if(t==="dark")document.querySelector('meta[name="theme-color"]').content="#151412"}}catch(e){{}}</script>
@@ -78,6 +102,7 @@ def page(*, title: str, description: str, path: str, body: str, assets: dict, sc
   <link rel="stylesheet" href="{GOOGLE_FONTS}" />
   <link rel="stylesheet" href="/assets/site.css?v={assets['site.css']}" />
   {js}
+  {json_ld(ld) if ld else ""}
 </head>
 <body{f' class="{body_class}"' if body_class else ''}>
   <main{f' class="{main_class}"' if main_class else ''}>
@@ -165,9 +190,19 @@ def poem_page(p: dict, assets: dict) -> str:
 {CREDIT.format(year=date.today().year)}
     {json_script("poem-data", data)}"""
     desc = (ov.get("summary") or f"{title}, a {p['form']} by {p['poet']}, translated word by word.")[:300]
+    url = f"{BASE_URL}/{p['id']}/"
+    work = {"@type": "CreativeWork", "name": title, "alternateName": [p["title_ur"], cap(p["title_roman"])],
+            "author": {"@type": "Person", "name": p["poet"]}, "inLanguage": "ur", "genre": p["form"].capitalize()}
+    if p.get("collection"):
+        work["isPartOf"] = {"@type": "Book", "name": p["collection"]}
+    ld = {"@context": "https://schema.org", "@type": "WebPage", "@id": url, "url": url,
+          "name": f"{title} · {p['poet']}", "description": desc, "inLanguage": "en",
+          "isPartOf": {"@id": SITE_ID}, "author": PERSON, "about": work,
+          "primaryImageOfPage": f"{BASE_URL}/assets/og/{p['id']}.png"}
     return page(title=f"{title} · {p['poet']}", description=desc, path=f"/{p['id']}/", body=body,
                 assets=assets, scripts=["theme.js", "reader.js"], og_type="article",
-                main_class="reader", body_class="page-reader")
+                main_class="reader", body_class="page-reader",
+                image=f"og/{p['id']}.png", image_alt=f"{title}, {byline(p)}", ld=ld)
 
 
 def search_entry(p: dict) -> dict:
@@ -217,9 +252,15 @@ def index_page(poems: list[dict], assets: dict) -> str:
     <p class="empty" id="empty" hidden>No poems match. Try a shorter word, or the Roman spelling without accents.</p>
 {CREDIT.format(year=date.today().year)}
     {json_script("search-data", [search_entry(p) for p in poems])}"""
-    return page(title="Zabandan", description="Zabandan is an aide for reading classical Urdu ghazals and nazms, allowing "
-                "non-native readers to truly appreciate the depth, beauty, and poetic meaning behind each word.",
-                path="/", body=body, assets=assets, scripts=["theme.js", "search.js"])
+    desc = ("Zabandan is an aide for reading classical Urdu ghazals and nazms, allowing non-native readers "
+            "to truly appreciate the depth, beauty, and poetic meaning behind each word.")
+    ld = {"@context": "https://schema.org", "@type": "WebSite", "@id": SITE_ID, "url": BASE_URL + "/",
+          "name": "Zabandan", "alternateName": "زباندان", "description": desc, "inLanguage": "en",
+          "author": PERSON, "publisher": PERSON,
+          "potentialAction": {"@type": "SearchAction", "target": BASE_URL + "/?q={search_term_string}",
+                              "query-input": "required name=search_term_string"}}
+    return page(title="Zabandan", description=desc, path="/", body=body, assets=assets,
+                scripts=["theme.js", "search.js"], ld=ld)
 
 
 def not_found_page(assets: dict) -> str:
@@ -228,8 +269,9 @@ def not_found_page(assets: dict) -> str:
     </header>
     <h1 class="poem-title">Not found</h1>
     <p>There's no poem at this address. <a href="/">See all poems</a>.</p>"""
-    return page(title="Not found · Zabandan", description="Page not found.", path="/404", body=body,
-                assets=assets, scripts=["theme.js"])
+    out = page(title="Not found · Zabandan", description="Page not found.", path="/404", body=body,
+               assets=assets, scripts=["theme.js"])
+    return out.replace("<head>", '<head>\n  <meta name="robots" content="noindex" />', 1)
 
 
 def main() -> None:

@@ -47,6 +47,7 @@ the server is serving it:
 ```bash
 python scripts/annotate_poem.py <poem>
 python scripts/curate_notes.py <poem>
+python scripts/make_og.py        # link-preview image for the new poem
 python scripts/build_site.py
 ```
 
