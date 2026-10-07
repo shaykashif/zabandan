@@ -18,13 +18,13 @@ On the server (MobaXterm):
 /var/www/zabandan/deploy/update.sh
 ```
 
-## First-time setup on the server
+## First-time setup on the server (Oracle Linux)
 
 ```bash
 sudo git clone https://github.com/shaykashif/zabandan.git /var/www/zabandan
 sudo chown -R $USER /var/www/zabandan
-sudo cp /var/www/zabandan/deploy/nginx-zabandan.conf /etc/nginx/sites-available/zabandan
-sudo ln -s /etc/nginx/sites-available/zabandan /etc/nginx/sites-enabled/
+sudo cp /var/www/zabandan/deploy/nginx-zabandan.conf /etc/nginx/conf.d/zabandan.conf
+sudo restorecon -Rv /var/www/zabandan   # SELinux labels, so nginx may read the files
 sudo nginx -t && sudo systemctl reload nginx
 ```
 
