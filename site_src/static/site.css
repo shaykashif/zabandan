@@ -1,0 +1,199 @@
+/* Zabandan. Base, paper and margin borders follow shaykas.com (site.css and the homepage's
+   inline styles) so the subdomain reads as part of the same site. Added for poetry: Noto
+   Nastaliq for Urdu, a gold double rule around each couplet like a manuscript jadval, and
+   gold numbering. */
+@font-face{font-family:"Aktiv Grotesk";src:url(/assets/fonts/aktiv-grotesk-light.woff2) format("woff2");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Aktiv Grotesk";src:url(/assets/fonts/aktiv-grotesk-regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Aktiv Grotesk";src:url(/assets/fonts/aktiv-grotesk-medium.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Aktiv Grotesk";src:url(/assets/fonts/aktiv-grotesk-semibold.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}
+
+:root{
+  --bg:#f6f2e6;--fg:#1c1b17;--dim:#6a6860;--line:#e2ddcf;
+  --gold:#94733a;--ink:#1c1b17;--hl:rgba(148,115,58,.16);--hl-soft:rgba(148,115,58,.08);
+  --display:"Aktiv Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --text:"Aktiv Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --urdu:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq","Urdu Typesetting","Noto Naskh Arabic",serif;
+  color-scheme:light
+}
+:root[data-theme="dark"]{--bg:#151412;--fg:#fff;--dim:#9c978b;--line:#2e2c27;--gold:#c9a764;--ink:#c9a764;--hl:rgba(201,167,100,.2);--hl-soft:rgba(201,167,100,.1);color-scheme:dark}
+*{box-sizing:border-box}
+html,body{transition:background-color .3s ease,color .3s ease}
+html{background:var(--bg);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 var(--text);font-weight:400;-webkit-font-smoothing:antialiased}
+main{max-width:600px;margin:0 auto;padding:64px 24px 120px}
+main.wide{max-width:680px}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,[role="button"]:focus-visible{outline:2px solid var(--fg);outline-offset:3px}
+h1,h2{font-family:var(--display);letter-spacing:-.02em}
+p{margin:0 0 16px}
+em{font-style:italic}
+@keyframes fade-in{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:no-preference){body{animation:fade-in .7s ease-in-out both}}
+
+/* Paper: edges a shade warmer, like an old scroll, with a fine grain (as on the homepage) */
+html{background:radial-gradient(ellipse at center,rgba(140,110,60,0) 55%,rgba(140,110,60,.08) 100%) fixed,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .47 0 0 0 0 .39 0 0 0 0 .27 .3 0 0 0 -.1'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),var(--bg)}
+body{background:transparent}
+:root[data-theme="dark"]{background:var(--bg)}
+
+/* Margin borders: ruled bands set with eight-pointed stars, like the border of a Persian
+   manuscript page (same pattern as shaykas.com). Wide screens only. */
+@media (min-width:860px){
+body{position:relative;--half:300px}
+body:has(main.wide){--half:340px}
+body::before,body::after{content:"";position:absolute;top:40px;bottom:40px;width:24px;pointer-events:none;background:var(--fg);opacity:.14;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' fill='none' stroke='black' stroke-width='.8'%3E%3Cpath d='M.5 0V32M2.5 0V32M21.5 0V32M23.5 0V32M12 0V9.5M12 22.5V32M7.4 11.4h9.2v9.2H7.4zM12 9.5l6.5 6.5-6.5 6.5-6.5-6.5z'/%3E%3Ccircle cx='12' cy='16' r='2'/%3E%3C/svg%3E") center top/24px 32px repeat-y,linear-gradient(transparent,#000 160px,#000 calc(100% - 160px),transparent);-webkit-mask-composite:source-in;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' fill='none' stroke='black' stroke-width='.8'%3E%3Cpath d='M.5 0V32M2.5 0V32M21.5 0V32M23.5 0V32M12 0V9.5M12 22.5V32M7.4 11.4h9.2v9.2H7.4zM12 9.5l6.5 6.5-6.5 6.5-6.5-6.5z'/%3E%3Ccircle cx='12' cy='16' r='2'/%3E%3C/svg%3E") center top/24px 32px repeat-y,linear-gradient(transparent,#000 160px,#000 calc(100% - 160px),transparent);mask-composite:intersect}
+body::before{right:calc(50% + var(--half) + 40px)}
+body::after{left:calc(50% + var(--half) + 40px)}
+}
+
+/* Corner theme toggle (as on shaykas.com) */
+.corner{position:fixed;top:14px;right:14px;display:flex;z-index:5}
+.theme{display:flex;margin:0;padding:10px;border:0;background:none;color:var(--dim);line-height:0;cursor:pointer}
+.theme:hover{color:var(--fg)}
+.theme svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.theme .sun,[data-theme="dark"] .theme .moon{display:none}
+[data-theme="dark"] .theme .sun{display:block}
+
+/* Shared pieces from site.css */
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:56px;font-size:14px}
+.top a{color:var(--dim);text-decoration:none}
+.top a:hover{color:var(--fg)}
+.top span{color:var(--dim)}
+.kicker{margin:0 0 12px;color:var(--dim);font-size:12px;letter-spacing:.01em}
+.label{margin:48px 0 6px;color:var(--dim);font:400 12px/1.4 var(--text);letter-spacing:.01em}
+.ur{font-family:var(--urdu);direction:rtl;unicode-bidi:isolate}
+.credit{margin-top:72px;color:var(--dim);font-size:12px}
+.credit p{margin:0 0 4px}
+.credit a{text-decoration:underline;text-decoration-color:var(--dim);text-underline-offset:3px}
+
+/* ── Index ─────────────────────────────────────────────── */
+.masthead{display:flex;align-items:baseline;gap:14px;margin-bottom:40px}
+.masthead h1{margin:0;font-size:20px;font-weight:600;line-height:1.2}
+.masthead .ur{font-size:22px;line-height:1.8;color:var(--gold)}
+.intro p{font-size:17px;line-height:1.65}
+.intro .note{color:var(--dim);font-size:14px;line-height:1.55}
+.search{margin:40px 0 8px}
+.search label{display:block;margin-bottom:6px;color:var(--dim);font-size:12px;letter-spacing:.01em}
+.search input{width:100%;padding:8px 0;border:0;border-bottom:1px solid var(--line);background:none;color:var(--fg);font:17px/1.4 var(--text);border-radius:0}
+.search input::placeholder{color:var(--dim);opacity:.8}
+.search input:focus{outline:none;border-bottom-color:var(--fg)}
+.count{margin:0;color:var(--dim);font-size:12px}
+ul.list{margin:0;padding:0;list-style:none}
+.list li{border-bottom:1px solid var(--line)}
+.list a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px 16px;align-items:baseline;padding:14px 0;text-decoration:none}
+.list a:hover .t{text-decoration:underline;text-underline-offset:3px}
+.list .t{font-weight:500}
+.list .d{color:var(--dim);font-size:12px;letter-spacing:.01em;white-space:nowrap}
+.list .sub{grid-column:1/-1;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:4px 16px;color:var(--dim);font-size:14px}
+.list .sub .ur{font-size:17px;line-height:2.3;color:var(--fg);padding-top:2px}
+.list .hit{grid-column:1/-1;margin-top:4px;color:var(--dim);font-size:13px;line-height:1.5}
+.list .hit mark{background:var(--hl);color:var(--fg);border-radius:2px;padding:0 1px}
+.empty{padding:20px 0;color:var(--dim)}
+
+/* ── Reader ────────────────────────────────────────────── */
+/* Full-width translator: the poem on one framed page, a card beside it for the tapped word,
+   joined by a gold branch drawn in #branch. Below 960px the card is a bottom sheet. */
+main.reader{max-width:1240px;padding-left:24px;padding-right:24px}
+.reader .top,.reader .poem-meta,.reader .provenance,.reader .credit{max-width:640px}
+.poem-meta{margin-bottom:28px}
+.poem-title{margin:0 0 4px;font-size:36px;font-weight:600;line-height:1.1;letter-spacing:-.03em;text-wrap:balance}
+.poem-title::first-letter{}
+.poem-by{margin:12px 0 0;color:var(--dim);font-size:15px}
+.poem-ur{margin:10px 0 0;font-size:24px;line-height:2.1;color:var(--gold);text-align:left}
+.poem-roman{margin:2px 0 0;color:var(--dim);font-size:15px;font-style:italic}
+
+.reader-bar{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin:0 0 16px;font-size:13px;color:var(--dim)}
+.reader-bar .hint{margin-right:auto}
+.reader-bar .mark{text-decoration:underline dotted var(--gold);text-decoration-thickness:1.5px;text-underline-offset:4px;color:var(--fg)}
+.tgl{margin:0;padding:0;border:0;background:none;color:var(--dim);font:inherit;cursor:pointer;text-decoration:line-through;text-decoration-color:var(--line)}
+.tgl[aria-pressed="true"]{color:var(--fg);text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:4px}
+
+.layout{position:relative;display:grid;grid-template-columns:minmax(0,1fr);gap:48px}
+@media (min-width:960px){.layout{grid-template-columns:minmax(0,1fr) minmax(320px,400px);gap:72px}}
+
+/* The page: one gold double rule round the whole poem, like a manuscript leaf */
+.page{position:relative;margin:4px;padding:clamp(20px,4vw,48px) clamp(16px,4vw,56px);border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:4px}
+.couplet{position:relative;padding:6px 0}
+.couplet + .couplet{margin-top:clamp(18px,2.6vw,32px)}
+.c-num{position:absolute;top:22px;left:calc(-1 * clamp(10px,3vw,40px));color:var(--gold);font-size:11px;font-variant-numeric:tabular-nums;opacity:.85}
+/* Each line: Urdu, then its transliteration, then its English. Nastaliq sits low and the
+   gold underlines hang below it, so the lines under it get real clearance. */
+.line-ur{margin:0;font-family:var(--urdu);font-size:clamp(1.15rem,3.1vw,1.95rem);line-height:2.2;text-align:center;direction:rtl}
+.line-roman{margin:10px 0 0;color:var(--dim);font-size:13px;font-style:italic;text-align:center;line-height:1.45}
+.line-en{margin:4px 0 0;color:var(--fg);font-size:16.5px;text-align:center;line-height:1.45;text-wrap:balance}
+.line-en + .line-ur,.line-roman + .line-ur{margin-top:18px}
+body.no-roman .line-roman,body.no-english .line-en{display:none}
+body.no-roman .line-en{margin-top:10px}
+.stanza-break{display:flex;justify-content:center;padding:clamp(14px,2.5vw,28px) 0}
+.stanza-break svg{width:18px;height:18px;fill:none;stroke:var(--gold);stroke-width:1.6;stroke-linejoin:round}
+
+.u{margin:0;padding:0 .06em;border:0;border-radius:3px;background:none;color:inherit;font:inherit;line-height:inherit;cursor:pointer}
+.u:hover{background:var(--hl-soft)}
+.u.noted{text-decoration:underline dotted var(--gold);text-decoration-thickness:1.5px;text-underline-offset:.42em}
+.u.sel{background:var(--hl);color:var(--fg)}
+.u.rel{background:var(--hl-soft)}
+
+/* The branch */
+#branch{position:absolute;top:0;left:0;pointer-events:none;overflow:visible;z-index:2}
+#branch .b-main,#branch .b-twig{fill:none;stroke:var(--gold);stroke-width:1.3;stroke-linecap:round}
+#branch .b-twig{stroke-width:1.1}
+#branch .b-bud{fill:var(--gold)}
+@media (max-width:959px){#branch{display:none}}
+
+/* The card */
+.aside{position:relative}
+/* Translation column: each line's poetic English, with the word-for-word English in grey
+   beneath it, level with its Urdu line (placed by reader.js). The card, when open, sits over it. */
+.aside-head{margin:0;color:var(--dim);font-size:12px;letter-spacing:.01em}
+.side-line{position:absolute;left:0;right:0;transition:opacity .2s ease}
+.sl-poetic{margin:0;color:var(--fg);font:500 18px/1.42 var(--display);letter-spacing:-.005em;text-wrap:pretty}
+.sl-literal{margin:4px 0 0;color:var(--dim);font-size:14.5px;line-height:1.45}
+.sl-literal .seg.linked{cursor:pointer}
+.sl-literal .seg.linked:hover{color:var(--fg);background:var(--hl-soft)}
+body.card-open .side-line{opacity:.4}
+body.no-english .sl-poetic,body.no-literal .sl-literal{display:none}
+body.no-english.no-literal .side-line,body.no-english.no-literal .aside-head{display:none}
+body.no-english .sl-literal{margin-top:0}
+/* With the translation beside the poem, the poem column holds only Urdu and Roman. */
+@media (min-width:960px){.page .line-en{display:none}}
+.card{position:absolute;left:0;right:0;z-index:3;padding:20px 22px 18px;background:var(--bg);border:1px solid var(--line);border-left:2px solid var(--gold);box-shadow:0 10px 30px -18px rgba(40,30,10,.35)}
+:root[data-theme="dark"] .card{box-shadow:0 10px 30px -14px rgba(0,0,0,.7)}
+.close{position:absolute;top:6px;right:6px;width:32px;height:32px;padding:0;border:0;background:none;color:var(--dim);font:400 20px/1 var(--text);cursor:pointer}
+.close:hover{color:var(--fg)}
+.card-word{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;padding-right:28px}
+.cw-ur{font-size:30px;line-height:1.9;color:var(--fg)}
+.cw-roman{font-size:16px;font-style:italic;color:var(--dim)}
+.cw-gloss{margin:2px 0 0;font:500 19px/1.35 var(--display);letter-spacing:-.01em}
+.cw-base{margin:4px 0 0;color:var(--dim);font-size:13px}
+.cw-phrase{margin:12px 0 0;padding:8px 12px;background:var(--hl-soft);font-size:14px;line-height:1.5}
+.cw-phrase .ur{font-size:17px;margin-right:4px}
+.cw-note{margin:12px 0 0;padding-top:10px;border-top:1px solid var(--line)}
+.cw-note-kind{display:block;margin-bottom:2px;color:var(--gold);font-size:12px;letter-spacing:.01em}
+.cw-note p{margin:0;font-size:14px;line-height:1.55}
+.card-couplet{margin-top:16px;padding-top:12px;border-top:1px solid var(--line);display:grid;gap:8px}
+.cc-label{color:var(--dim);font-size:12px;letter-spacing:.01em}
+.cc-literal p{margin:0;color:var(--dim);font-size:15px;line-height:1.55}
+.cc-sub{margin-bottom:-4px;color:var(--dim);font-size:12px}
+.seg{border-radius:2px}
+.seg.linked{cursor:pointer}
+.seg.linked:hover{color:var(--fg)}
+.seg.sel{background:var(--hl);color:var(--fg)}
+.seg.rel{background:var(--hl-soft)}
+
+/* Narrow screens: the card is a sheet at the bottom of the screen */
+@media (max-width:959px){
+  .aside-head,.side-line,#t-literal{display:none}
+  .card{position:fixed;left:0;right:0;bottom:0;top:auto !important;max-height:62vh;overflow:auto;padding:18px 20px calc(18px + env(safe-area-inset-bottom,0px));border:0;border-top:2px solid var(--gold);box-shadow:0 -12px 30px -16px rgba(0,0,0,.35)}
+  body.card-open main{padding-bottom:62vh}
+}
+
+.provenance{margin-top:72px;padding-top:16px;border-top:1px solid var(--line);color:var(--dim);font-size:12px;line-height:1.55}
+.provenance p{margin:0 0 6px}
+
+/* Margin borders on reader pages sit outside the wide layout, so only on very wide screens */
+@media (min-width:860px){body.page-reader::before,body.page-reader::after{display:none}}
+@media (min-width:1420px){body.page-reader{--half:620px}body.page-reader::before,body.page-reader::after{display:block}}
+
+@media (prefers-reduced-motion:no-preference){.u,.seg{transition:background-color .12s ease}}
+@media (max-width:560px){.poem-title{font-size:30px}main{padding-top:48px}}
+.list .hit .where{color:var(--dim);font-size:12px;letter-spacing:.01em;margin-right:4px}
+.list .hit .ur{font-size:16px;line-height:2;color:var(--fg)}

@@ -1,0 +1,3260 @@
+{
+ "id": "hazaaron-khvaahishen-aisii-ki-har-khvaahish-pe-dam-nikle-mirza-ghalib-ghazals",
+ "poet": "Mirza Ghalib",
+ "model": "deepseek/deepseek-v4-pro-0813",
+ "source": "Text and transliteration: Rekhta, via github.com/amir9ume/urdu_ghazals_rekhta",
+ "radif": {
+  "ur": "نکلے",
+  "roman": "nikle",
+  "en": "came out / emerged"
+ },
+ "qafiya": [
+  "kam",
+  "dam",
+  "ham",
+  "kham",
+  "qalam",
+  "jam",
+  "sitam",
+  "dam",
+  "ham"
+ ],
+ "summary": "The ghazal reflects on intense longing, love, disgrace, and fate, with the refrain 'nikle' repeatedly marking what emerges or results from desire, cruelty, or circumstance. Ghalib moves from unfulfilled wishes and the lover's humiliation to ironic contrasts with Adam's expulsion, the beloved's beauty, wine-drinking, and the preacher's hypocrisy. The overall mood is one of wounded pride and paradox, where love erases the difference between living and dying.",
+ "couplets": [
+  {
+   "index": 0,
+   "is_matla": true,
+   "is_maqta": false,
+   "ur": [
+    "ہزاروں خواہشیں ایسی کہ ہر خواہش پہ دم نکلے",
+    "بہت نکلے مرے ارمان لیکن پھر بھی کم نکلے"
+   ],
+   "roman": [
+    "hazāroñ ḳhvāhisheñ aisī ki har ḳhvāhish pe dam nikle",
+    "bahut nikle mire armān lekin phir bhī kam nikle"
+   ],
+   "words": [
+    [
+     "ہزاروں",
+     "خواہشیں",
+     "ایسی",
+     "کہ",
+     "ہر",
+     "خواہش",
+     "پہ",
+     "دم",
+     "نکلے"
+    ],
+    [
+     "بہت",
+     "نکلے",
+     "مرے",
+     "ارمان",
+     "لیکن",
+     "پھر",
+     "بھی",
+     "کم",
+     "نکلے"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "hazāroñ",
+     "kind": "word",
+     "gloss": "thousands",
+     "base": "",
+     "ur": "ہزاروں"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "ḳhvāhisheñ",
+     "kind": "word",
+     "gloss": "desires",
+     "base": "wishes",
+     "ur": "خواہشیں"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "aisī",
+     "kind": "word",
+     "gloss": "such",
+     "base": "",
+     "ur": "ایسی"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "ki",
+     "kind": "particle",
+     "gloss": "that",
+     "base": "",
+     "ur": "کہ"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "har",
+     "kind": "word",
+     "gloss": "every",
+     "base": "",
+     "ur": "ہر"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "ḳhvāhish",
+     "kind": "word",
+     "gloss": "desire",
+     "base": "wish",
+     "ur": "خواہش"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "pe",
+     "kind": "particle",
+     "gloss": "on, upon",
+     "base": "",
+     "ur": "پہ"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "dam",
+     "kind": "word",
+     "gloss": "breath; life",
+     "base": "breath",
+     "ur": "دم"
+    },
+    {
+     "id": "u9",
+     "line": 0,
+     "start": 8,
+     "end": 8,
+     "roman": "nikle",
+     "kind": "word",
+     "gloss": "may pass, may escape",
+     "base": "emerge",
+     "ur": "نکلے"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "bahut",
+     "kind": "word",
+     "gloss": "many",
+     "base": "much, very",
+     "ur": "بہت"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "nikle",
+     "kind": "word",
+     "gloss": "came out, emerged",
+     "base": "emerged",
+     "ur": "نکلے"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "mire",
+     "kind": "word",
+     "gloss": "my",
+     "base": "mere",
+     "ur": "مرے"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "armān",
+     "kind": "word",
+     "gloss": "longings, yearnings",
+     "base": "desires, regrets",
+     "ur": "ارمان"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "lekin",
+     "kind": "particle",
+     "gloss": "but",
+     "base": "",
+     "ur": "لیکن"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 5,
+     "end": 6,
+     "roman": "phir bhī",
+     "kind": "compound",
+     "gloss": "still, nevertheless",
+     "base": "even then",
+     "ur": "پھر بھی"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "kam",
+     "kind": "word",
+     "gloss": "few, little",
+     "base": "little, less",
+     "ur": "کم"
+    },
+    {
+     "id": "u17",
+     "line": 1,
+     "start": 8,
+     "end": 8,
+     "roman": "nikle",
+     "kind": "word",
+     "gloss": "came out",
+     "base": "emerged",
+     "ur": "نکلے"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u8",
+      "u9"
+     ],
+     "gloss": "breath may pass; one may die"
+    },
+    {
+     "id": "p2",
+     "units": [
+      "u13",
+      "u11"
+     ],
+     "gloss": "longings come out, are fulfilled"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "Thousands of",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "desires",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "are",
+      "units": []
+     },
+     {
+      "text": "such",
+      "units": [
+       "u3"
+      ]
+     },
+     {
+      "text": "that",
+      "units": [
+       "u4"
+      ]
+     },
+     {
+      "text": "on",
+      "units": [
+       "u7"
+      ]
+     },
+     {
+      "text": "every",
+      "units": [
+       "u5"
+      ]
+     },
+     {
+      "text": "desire",
+      "units": [
+       "u6"
+      ]
+     },
+     {
+      "text": "the",
+      "units": []
+     },
+     {
+      "text": "breath",
+      "units": [
+       "u8"
+      ]
+     },
+     {
+      "text": "may pass",
+      "units": [
+       "u9"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "Many",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "of",
+      "units": []
+     },
+     {
+      "text": "my",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "longings",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "came out",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "but",
+      "units": [
+       "u14"
+      ]
+     },
+     {
+      "text": "still",
+      "units": [
+       "u15"
+      ]
+     },
+     {
+      "text": "few",
+      "units": [
+       "u16"
+      ]
+     },
+     {
+      "text": "came out",
+      "units": [
+       "u17"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "Thousands of desires, each one such that a life could end upon it;",
+    "Many of my longings came to pass, yet still they were too few."
+   ],
+   "notes": [
+    "The phrase dam nikalna means to die or to have ones breath depart; here each desire is felt so intensely that it could kill.",
+    "The verb nikalna is repeated at the end of both lines: first for death from desire, then for longings emerging or being fulfilled.",
+    "Arman can mean unfulfilled wishes, regrets, or longings; the speaker says many came out, yet they still seem far too few.",
+    "The first line sets up a hyperbolic result clause with ki: such desires that every single desire would make life leave.",
+    "The couplet turns on the paradox of insatiable desire: even many fulfilled longings are less than the thousands the heart holds."
+   ],
+   "cost": 0.0349602
+  },
+  {
+   "index": 1,
+   "is_matla": false,
+   "is_maqta": false,
+   "ur": [
+    "ڈرے کیوں میرا قاتل کیا رہے گا اس کی گردن پر",
+    "وہ خوں جو چشم تر سے عمر بھر یوں دم بدم نکلے"
+   ],
+   "roman": [
+    "Dare kyuuñ merā qātil kyā rahegā us kī gardan par",
+    "vo ḳhuuñ jo chashm-e-tar se umr bhar yuuñ dam-ba-dam nikle"
+   ],
+   "words": [
+    [
+     "ڈرے",
+     "کیوں",
+     "میرا",
+     "قاتل",
+     "کیا",
+     "رہے",
+     "گا",
+     "اس",
+     "کی",
+     "گردن",
+     "پر"
+    ],
+    [
+     "وہ",
+     "خوں",
+     "جو",
+     "چشم",
+     "تر",
+     "سے",
+     "عمر",
+     "بھر",
+     "یوں",
+     "دم",
+     "بدم",
+     "نکلے"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "Dare",
+     "kind": "word",
+     "gloss": "should fear",
+     "base": "fear",
+     "ur": "ڈرے"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "kyuuñ",
+     "kind": "word",
+     "gloss": "why",
+     "base": "",
+     "ur": "کیوں"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "merā",
+     "kind": "word",
+     "gloss": "my",
+     "base": "",
+     "ur": "میرا"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "qātil",
+     "kind": "word",
+     "gloss": "killer",
+     "base": "",
+     "ur": "قاتل"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "kyā",
+     "kind": "word",
+     "gloss": "what",
+     "base": "",
+     "ur": "کیا"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "rahegā",
+     "kind": "word",
+     "gloss": "will remain",
+     "base": "",
+     "ur": "رہے"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "gā",
+     "kind": "word",
+     "gloss": "will",
+     "base": "",
+     "ur": "گا"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "us",
+     "kind": "word",
+     "gloss": "his",
+     "base": "that",
+     "ur": "اس"
+    },
+    {
+     "id": "u9",
+     "line": 0,
+     "start": 8,
+     "end": 8,
+     "roman": "kī",
+     "kind": "word",
+     "gloss": "of",
+     "base": "",
+     "ur": "کی"
+    },
+    {
+     "id": "u10",
+     "line": 0,
+     "start": 9,
+     "end": 9,
+     "roman": "gardan",
+     "kind": "word",
+     "gloss": "neck",
+     "base": "",
+     "ur": "گردن"
+    },
+    {
+     "id": "u11",
+     "line": 0,
+     "start": 10,
+     "end": 10,
+     "roman": "par",
+     "kind": "word",
+     "gloss": "on",
+     "base": "",
+     "ur": "پر"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "vo",
+     "kind": "word",
+     "gloss": "that",
+     "base": "",
+     "ur": "وہ"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "ḳhuuñ",
+     "kind": "word",
+     "gloss": "blood",
+     "base": "",
+     "ur": "خوں"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "jo",
+     "kind": "word",
+     "gloss": "which",
+     "base": "",
+     "ur": "جو"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 3,
+     "end": 4,
+     "roman": "chashm-e-tar",
+     "kind": "compound",
+     "gloss": "wet eyes",
+     "base": "moist eyes",
+     "ur": "چشم تر"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "se",
+     "kind": "word",
+     "gloss": "from",
+     "base": "",
+     "ur": "سے"
+    },
+    {
+     "id": "u17",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "umr",
+     "kind": "word",
+     "gloss": "life",
+     "base": "",
+     "ur": "عمر"
+    },
+    {
+     "id": "u18",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "bhar",
+     "kind": "word",
+     "gloss": "throughout",
+     "base": "",
+     "ur": "بھر"
+    },
+    {
+     "id": "u19",
+     "line": 1,
+     "start": 8,
+     "end": 8,
+     "roman": "yuuñ",
+     "kind": "word",
+     "gloss": "thus",
+     "base": "",
+     "ur": "یوں"
+    },
+    {
+     "id": "u20",
+     "line": 1,
+     "start": 9,
+     "end": 10,
+     "roman": "dam-ba-dam",
+     "kind": "compound",
+     "gloss": "moment by moment, continually",
+     "base": "breath by breath",
+     "ur": "دم بدم"
+    },
+    {
+     "id": "u21",
+     "line": 1,
+     "start": 11,
+     "end": 11,
+     "roman": "nikle",
+     "kind": "word",
+     "gloss": "flowed out",
+     "base": "came out",
+     "ur": "نکلے"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u20",
+      "u21"
+     ],
+     "gloss": "flowed out continually, moment by moment"
+    },
+    {
+     "id": "p2",
+     "units": [
+      "u17",
+      "u18"
+     ],
+     "gloss": "throughout life, all life long"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "Why",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "should",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "my",
+      "units": [
+       "u3"
+      ]
+     },
+     {
+      "text": "killer",
+      "units": [
+       "u4"
+      ]
+     },
+     {
+      "text": "fear?",
+      "units": []
+     },
+     {
+      "text": "What",
+      "units": [
+       "u5"
+      ]
+     },
+     {
+      "text": "will",
+      "units": [
+       "u6",
+       "u7"
+      ]
+     },
+     {
+      "text": "remain",
+      "units": [
+       "u6"
+      ]
+     },
+     {
+      "text": "on",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "his",
+      "units": [
+       "u8"
+      ]
+     },
+     {
+      "text": "neck",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "(of it)?",
+      "units": []
+     }
+    ],
+    [
+     {
+      "text": "That",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "blood",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "which",
+      "units": [
+       "u14"
+      ]
+     },
+     {
+      "text": "from",
+      "units": [
+       "u16"
+      ]
+     },
+     {
+      "text": "wet",
+      "units": [
+       "u15"
+      ]
+     },
+     {
+      "text": "eyes",
+      "units": [
+       "u15"
+      ]
+     },
+     {
+      "text": "throughout",
+      "units": [
+       "u17",
+       "u18"
+      ]
+     },
+     {
+      "text": "life",
+      "units": [
+       "u17"
+      ]
+     },
+     {
+      "text": "thus",
+      "units": [
+       "u19"
+      ]
+     },
+     {
+      "text": "moment",
+      "units": [
+       "u20"
+      ]
+     },
+     {
+      "text": "by",
+      "units": [
+       "u20"
+      ]
+     },
+     {
+      "text": "moment",
+      "units": [
+       "u20"
+      ]
+     },
+     {
+      "text": "flowed",
+      "units": [
+       "u21"
+      ]
+     },
+     {
+      "text": "out",
+      "units": [
+       "u21"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "Why should my killer fear? What blood could stay upon his neck,",
+    "when from my weeping eyes it flowed out moment by moment all my life?"
+   ],
+   "notes": [
+    "The lover's tears of blood are a metaphor for his lifeblood draining away through grief; the beloved's 'killing' is thus bloodless.",
+    "The rhetorical question 'What blood will remain on his neck?' implies the beloved can shed no actual blood because the lover has already wept it all out.",
+    "'Dam-ba-dam' literally means 'breath by breath' but implies continuous, unceasing action, linking weeping and dying.",
+    "'Chashm-e-tar' is a Persian izafat compound: 'tar' means moist or wet, so the compound means 'wet eye'—here tears of blood.",
+    "The couplet plays on the idea of blood-guilt: if no blood remains, the beloved killer has nothing to fear, yet the lover's whole life has been one long bleeding."
+   ],
+   "cost": 0.075664248
+  },
+  {
+   "index": 2,
+   "is_matla": false,
+   "is_maqta": false,
+   "ur": [
+    "نکلنا خلد سے آدم کا سنتے آئے ہیں لیکن",
+    "بہت بے آبرو ہو کر ترے کوچے سے ہم نکلے"
+   ],
+   "roman": [
+    "nikalnā ḳhuld se aadam kā sunte aa.e haiñ lekin",
+    "bahut be-ābrū ho kar tire kūche se ham nikle"
+   ],
+   "words": [
+    [
+     "نکلنا",
+     "خلد",
+     "سے",
+     "آدم",
+     "کا",
+     "سنتے",
+     "آئے",
+     "ہیں",
+     "لیکن"
+    ],
+    [
+     "بہت",
+     "بے",
+     "آبرو",
+     "ہو",
+     "کر",
+     "ترے",
+     "کوچے",
+     "سے",
+     "ہم",
+     "نکلے"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "nikalnā",
+     "kind": "word",
+     "gloss": "going out, leaving, expulsion",
+     "base": "to come out, to go out",
+     "ur": "نکلنا"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "ḳhuld",
+     "kind": "word",
+     "gloss": "Paradise, Eden",
+     "base": "",
+     "ur": "خلد"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "se",
+     "kind": "particle",
+     "gloss": "from",
+     "base": "",
+     "ur": "سے"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "aadam",
+     "kind": "name",
+     "gloss": "Adam",
+     "base": "Adam",
+     "ur": "آدم"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "kā",
+     "kind": "particle",
+     "gloss": "of, possessive marker",
+     "base": "",
+     "ur": "کا"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "sunte",
+     "kind": "word",
+     "gloss": "hearing; have heard",
+     "base": "to hear",
+     "ur": "سنتے"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "aa.e",
+     "kind": "word",
+     "gloss": "have come; have been doing",
+     "base": "to come",
+     "ur": "آئے"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "haiñ",
+     "kind": "word",
+     "gloss": "are",
+     "base": "to be",
+     "ur": "ہیں"
+    },
+    {
+     "id": "u9",
+     "line": 0,
+     "start": 8,
+     "end": 8,
+     "roman": "lekin",
+     "kind": "particle",
+     "gloss": "but",
+     "base": "",
+     "ur": "لیکن"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "bahut",
+     "kind": "word",
+     "gloss": "very, much, utterly",
+     "base": "",
+     "ur": "بہت"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 1,
+     "end": 2,
+     "roman": "be-ābrū",
+     "kind": "compound",
+     "gloss": "dishonoured, disgraced, stripped of honour",
+     "base": "without honour",
+     "ur": "بے آبرو"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 3,
+     "end": 4,
+     "roman": "ho kar",
+     "kind": "compound",
+     "gloss": "having become, being",
+     "base": "hokar",
+     "ur": "ہو کر"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "tire",
+     "kind": "word",
+     "gloss": "your",
+     "base": "",
+     "ur": "ترے"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "kūche",
+     "kind": "word",
+     "gloss": "lane, street",
+     "base": "",
+     "ur": "کوچے"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "se",
+     "kind": "particle",
+     "gloss": "from",
+     "base": "",
+     "ur": "سے"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 8,
+     "end": 8,
+     "roman": "ham",
+     "kind": "word",
+     "gloss": "we",
+     "base": "",
+     "ur": "ہم"
+    },
+    {
+     "id": "u17",
+     "line": 1,
+     "start": 9,
+     "end": 9,
+     "roman": "nikle",
+     "kind": "word",
+     "gloss": "came out, left",
+     "base": "to go out",
+     "ur": "نکلے"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u6",
+      "u7",
+      "u8"
+     ],
+     "gloss": "have heard from tradition"
+    },
+    {
+     "id": "p2",
+     "units": [
+      "u11",
+      "u12"
+     ],
+     "gloss": "having become dishonoured"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "We have heard",
+      "units": [
+       "u6",
+       "u7",
+       "u8"
+      ]
+     },
+     {
+      "text": "of the going out",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "of Adam",
+      "units": [
+       "u4",
+       "u5"
+      ]
+     },
+     {
+      "text": "from Paradise",
+      "units": [
+       "u2",
+       "u3"
+      ]
+     },
+     {
+      "text": "but",
+      "units": [
+       "u9"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "Having become",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "utterly",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "dishonoured",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "we came out",
+      "units": [
+       "u16",
+       "u17"
+      ]
+     },
+     {
+      "text": "from your lane",
+      "units": [
+       "u13",
+       "u14",
+       "u15"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "We have heard of Adam's going out from Eden—true;",
+    "but from your lane we came forth far more dishonoured too."
+   ],
+   "notes": [
+    "The verse contrasts Adam's expulsion from Paradise with the lover's departure from the beloved's lane, claiming the lover's disgrace is even greater.",
+    "Khuld refers to Paradise or the Garden of Eden, while the beloved's lane, kūcha, is the earthly site of the lover's longing and public humiliation.",
+    "Be-ābrū literally means without water of the face, meaning dishonoured or disgraced; ābrū combines āb, water, and rū, face.",
+    "Sunte āe haiñ means they have always heard or have heard from long-standing tradition, setting scriptural report against personal experience.",
+    "The repetition of nikalnā and nikle underlines the parallel between Adam's expulsion and the speaker's exit."
+   ],
+   "cost": 0.02483217
+  },
+  {
+   "index": 3,
+   "is_matla": false,
+   "is_maqta": false,
+   "ur": [
+    "بھرم کھل جائے ظالم تیرے قامت کی درازی کا",
+    "اگر اس طرۂ پر پیچ و خم کا پیچ و خم نکلے"
+   ],
+   "roman": [
+    "bharam khul jaa.e zālim tere qāmat kī darāzī kā",
+    "agar is turra-e-pur-pech-o-ḳham kā pech-o-ḳham nikle"
+   ],
+   "words": [
+    [
+     "بھرم",
+     "کھل",
+     "جائے",
+     "ظالم",
+     "تیرے",
+     "قامت",
+     "کی",
+     "درازی",
+     "کا"
+    ],
+    [
+     "اگر",
+     "اس",
+     "طرۂ",
+     "پر",
+     "پیچ",
+     "و",
+     "خم",
+     "کا",
+     "پیچ",
+     "و",
+     "خم",
+     "نکلے"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "bharam",
+     "kind": "word",
+     "gloss": "illusion / secret / mistaken belief",
+     "base": "illusion, secret",
+     "ur": "بھرم"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "khul",
+     "kind": "word",
+     "gloss": "open / be revealed",
+     "base": "open",
+     "ur": "کھل"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "jaa.e",
+     "kind": "word",
+     "gloss": "would go (auxiliary)",
+     "base": "go",
+     "ur": "جائے"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "zālim",
+     "kind": "word",
+     "gloss": "O cruel one",
+     "base": "cruel, tyrant",
+     "ur": "ظالم"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "tere",
+     "kind": "word",
+     "gloss": "your",
+     "base": "",
+     "ur": "تیرے"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "qāmat",
+     "kind": "word",
+     "gloss": "stature / height",
+     "base": "",
+     "ur": "قامت"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "kī",
+     "kind": "word",
+     "gloss": "of (feminine)",
+     "base": "",
+     "ur": "کی"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "darāzī",
+     "kind": "word",
+     "gloss": "tallness / length",
+     "base": "",
+     "ur": "درازی"
+    },
+    {
+     "id": "u9",
+     "line": 0,
+     "start": 8,
+     "end": 8,
+     "roman": "kā",
+     "kind": "word",
+     "gloss": "of (masculine)",
+     "base": "",
+     "ur": "کا"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "agar",
+     "kind": "word",
+     "gloss": "if",
+     "base": "",
+     "ur": "اگر"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "is",
+     "kind": "word",
+     "gloss": "this",
+     "base": "",
+     "ur": "اس"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 2,
+     "end": 6,
+     "roman": "turra-e-pur-pech-o-ḳham",
+     "kind": "compound",
+     "gloss": "the forelock full of twists and curls",
+     "base": "forelock full of curls",
+     "ur": "طرۂ پر پیچ و خم"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "kā",
+     "kind": "word",
+     "gloss": "of / 's",
+     "base": "",
+     "ur": "کا"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 8,
+     "end": 10,
+     "roman": "pech-o-ḳham",
+     "kind": "compound",
+     "gloss": "twists and curls / complications",
+     "base": "twist and curl",
+     "ur": "پیچ و خم"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 11,
+     "end": 11,
+     "roman": "nikle",
+     "kind": "word",
+     "gloss": "would come out / be straightened",
+     "base": "come out",
+     "ur": "نکلے"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u1",
+      "u2",
+      "u3"
+     ],
+     "gloss": "the illusion/secret would be revealed"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "The illusion",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "would be revealed",
+      "units": [
+       "u2",
+       "u3"
+      ]
+     },
+     {
+      "text": "O cruel one",
+      "units": [
+       "u4"
+      ]
+     },
+     {
+      "text": "of your stature's tallness",
+      "units": [
+       "u5",
+       "u6",
+       "u7",
+       "u8",
+       "u9"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "if",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "this",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "twist-and-curl-filled forelock's",
+      "units": [
+       "u10",
+       "u13"
+      ]
+     },
+     {
+      "text": "twists and curls",
+      "units": [
+       "u14"
+      ]
+     },
+     {
+      "text": "would come out",
+      "units": [
+       "u15"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "O cruel one, the illusion of your tallness would be exposed",
+    "if the twists and curls of that twist-and-curl-filled forelock were unrolled."
+   ],
+   "notes": [
+    "bharam khulnā is an idiom meaning 'the secret/illusion is revealed'.",
+    "The beloved's tall stature is imagined as an illusion created by the high, curled forelock; if its curls were straightened, the height would vanish.",
+    "The repetition of pech-o-kham—first as adjective pur-pech-o-kham ('full of twists and curls') and then as noun pech-o-kham ('twists and curls')—creates a wordplay on the same root.",
+    "zālim (cruel one) is a conventional address to the beloved in Urdu ghazal, not a literal accusation.",
+    "The conditional agar... nikle (if... would come out) sets a hypothetical, almost impossible condition."
+   ],
+   "cost": 0.06594885
+  },
+  {
+   "index": 4,
+   "is_matla": false,
+   "is_maqta": false,
+   "ur": [
+    "مگر لکھوائے کوئی اس کو خط تو ہم سے لکھوائے",
+    "ہوئی صبح اور گھر سے کان پر رکھ کر قلم نکلے"
+   ],
+   "roman": [
+    "magar likhvā.e koī us ko ḳhat to ham se likhvā.e",
+    "huī sub.h aur ghar se kaan par rakh kar qalam nikle"
+   ],
+   "words": [
+    [
+     "مگر",
+     "لکھوائے",
+     "کوئی",
+     "اس",
+     "کو",
+     "خط",
+     "تو",
+     "ہم",
+     "سے",
+     "لکھوائے"
+    ],
+    [
+     "ہوئی",
+     "صبح",
+     "اور",
+     "گھر",
+     "سے",
+     "کان",
+     "پر",
+     "رکھ",
+     "کر",
+     "قلم",
+     "نکلے"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "magar",
+     "kind": "particle",
+     "gloss": "but",
+     "base": "",
+     "ur": "مگر"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "likhvā.e",
+     "kind": "word",
+     "gloss": "should have written",
+     "base": "causative of likhnā",
+     "ur": "لکھوائے"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "koī",
+     "kind": "word",
+     "gloss": "someone",
+     "base": "",
+     "ur": "کوئی"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "us",
+     "kind": "word",
+     "gloss": "him",
+     "base": "that one",
+     "ur": "اس"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "ko",
+     "kind": "particle",
+     "gloss": "to",
+     "base": "",
+     "ur": "کو"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "ḳhat",
+     "kind": "word",
+     "gloss": "letter",
+     "base": "",
+     "ur": "خط"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "to",
+     "kind": "particle",
+     "gloss": "then",
+     "base": "",
+     "ur": "تو"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "ham",
+     "kind": "word",
+     "gloss": "me",
+     "base": "we",
+     "ur": "ہم"
+    },
+    {
+     "id": "u9",
+     "line": 0,
+     "start": 8,
+     "end": 8,
+     "roman": "se",
+     "kind": "particle",
+     "gloss": "by",
+     "base": "",
+     "ur": "سے"
+    },
+    {
+     "id": "u10",
+     "line": 0,
+     "start": 9,
+     "end": 9,
+     "roman": "likhvā.e",
+     "kind": "word",
+     "gloss": "should have written",
+     "base": "causative of likhnā",
+     "ur": "لکھوائے"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "huī",
+     "kind": "word",
+     "gloss": "came",
+     "base": "happened",
+     "ur": "ہوئی"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "sub.h",
+     "kind": "word",
+     "gloss": "morning",
+     "base": "",
+     "ur": "صبح"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "aur",
+     "kind": "particle",
+     "gloss": "and",
+     "base": "",
+     "ur": "اور"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "ghar",
+     "kind": "word",
+     "gloss": "house",
+     "base": "home",
+     "ur": "گھر"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "se",
+     "kind": "particle",
+     "gloss": "from",
+     "base": "",
+     "ur": "سے"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "kaan",
+     "kind": "word",
+     "gloss": "ear",
+     "base": "",
+     "ur": "کان"
+    },
+    {
+     "id": "u17",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "par",
+     "kind": "particle",
+     "gloss": "on",
+     "base": "",
+     "ur": "پر"
+    },
+    {
+     "id": "u18",
+     "line": 1,
+     "start": 7,
+     "end": 8,
+     "roman": "rakh kar",
+     "kind": "compound",
+     "gloss": "placed",
+     "base": "having placed",
+     "ur": "رکھ کر"
+    },
+    {
+     "id": "u19",
+     "line": 1,
+     "start": 9,
+     "end": 9,
+     "roman": "qalam",
+     "kind": "word",
+     "gloss": "pen",
+     "base": "",
+     "ur": "قلم"
+    },
+    {
+     "id": "u20",
+     "line": 1,
+     "start": 10,
+     "end": 10,
+     "roman": "nikle",
+     "kind": "word",
+     "gloss": "came out",
+     "base": "emerged",
+     "ur": "نکلے"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u11",
+      "u12"
+     ],
+     "gloss": "morning came, dawn broke"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "But",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "should someone have a letter written to him",
+      "units": [
+       "u2",
+       "u3",
+       "u6",
+       "u4",
+       "u5"
+      ]
+     },
+     {
+      "text": "then",
+      "units": [
+       "u7"
+      ]
+     },
+     {
+      "text": "by me",
+      "units": [
+       "u8",
+       "u9"
+      ]
+     },
+     {
+      "text": "have it written",
+      "units": [
+       "u10"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "Morning",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "came",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "and",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "from the house",
+      "units": [
+       "u14",
+       "u15"
+      ]
+     },
+     {
+      "text": "with",
+      "units": []
+     },
+     {
+      "text": "pen",
+      "units": [
+       "u19"
+      ]
+     },
+     {
+      "text": "placed",
+      "units": [
+       "u18"
+      ]
+     },
+     {
+      "text": "on",
+      "units": [
+       "u17"
+      ]
+     },
+     {
+      "text": "ear",
+      "units": [
+       "u16"
+      ]
+     },
+     {
+      "text": "he came out",
+      "units": [
+       "u20"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "But if anyone would have a letter written to him, then let it be written by me;",
+    "day broke, and from his house he came out with a pen placed on his ear."
+   ],
+   "notes": [
+    "The repeated likhvā.e is the causative of likhnā, meaning to get something written; the line shifts the writing to the poet himself.",
+    "Putting a pen on the ear is a traditional gesture of a scribe or schoolboy, making the beloved look ready to write.",
+    "There is gentle irony: though the beloved appears with a pen on his ear, the poet claims that any letter-writing should be done by him.",
+    "The phrase sub.h huī is an idiom for daybreak, literally meaning 'morning became'.",
+    "The poetic plural ham is used for the singular first person, giving the speaker a formal or self-effacing tone."
+   ],
+   "cost": 0.03331053
+  },
+  {
+   "index": 5,
+   "is_matla": false,
+   "is_maqta": false,
+   "ur": [
+    "ہوئی اس دور میں منسوب مجھ سے بادہ آشامی",
+    "پھر آیا وہ زمانہ جو جہاں میں جام جم نکلے"
+   ],
+   "roman": [
+    "huī is daur meñ mansūb mujh se bāda-ashāmī",
+    "phir aayā vo zamāna jo jahāñ meñ jām-e-jam nikle"
+   ],
+   "words": [
+    [
+     "ہوئی",
+     "اس",
+     "دور",
+     "میں",
+     "منسوب",
+     "مجھ",
+     "سے",
+     "بادہ",
+     "آشامی"
+    ],
+    [
+     "پھر",
+     "آیا",
+     "وہ",
+     "زمانہ",
+     "جو",
+     "جہاں",
+     "میں",
+     "جام",
+     "جم",
+     "نکلے"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "huī",
+     "kind": "word",
+     "gloss": "became/came to be",
+     "base": "to be",
+     "ur": "ہوئی"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "is",
+     "kind": "word",
+     "gloss": "this",
+     "base": "",
+     "ur": "اس"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "daur",
+     "kind": "word",
+     "gloss": "age, era",
+     "base": "",
+     "ur": "دور"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "meñ",
+     "kind": "word",
+     "gloss": "in",
+     "base": "",
+     "ur": "میں"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "mansūb",
+     "kind": "word",
+     "gloss": "attributed, associated",
+     "base": "attributed",
+     "ur": "منسوب"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "mujh",
+     "kind": "word",
+     "gloss": "me",
+     "base": "I",
+     "ur": "مجھ"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "se",
+     "kind": "word",
+     "gloss": "to / with",
+     "base": "from/with",
+     "ur": "سے"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 7,
+     "end": 8,
+     "roman": "bāda-ashāmī",
+     "kind": "compound",
+     "gloss": "wine-drinking",
+     "base": "wine-drinking, bibulousness",
+     "ur": "بادہ آشامی"
+    },
+    {
+     "id": "u9",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "phir",
+     "kind": "word",
+     "gloss": "again/then",
+     "base": "",
+     "ur": "پھر"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "aayā",
+     "kind": "word",
+     "gloss": "came",
+     "base": "to come",
+     "ur": "آیا"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "vo",
+     "kind": "word",
+     "gloss": "that",
+     "base": "",
+     "ur": "وہ"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "zamāna",
+     "kind": "word",
+     "gloss": "age/time",
+     "base": "epoch",
+     "ur": "زمانہ"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "jo",
+     "kind": "word",
+     "gloss": "when/which",
+     "base": "who/which",
+     "ur": "جو"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "jahāñ",
+     "kind": "word",
+     "gloss": "world",
+     "base": "place",
+     "ur": "جہاں"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "meñ",
+     "kind": "word",
+     "gloss": "in",
+     "base": "",
+     "ur": "میں"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 7,
+     "end": 8,
+     "roman": "jām-e-jam",
+     "kind": "compound",
+     "gloss": "Cup of Jamshid",
+     "base": "world-revealing goblet",
+     "ur": "جام جم"
+    },
+    {
+     "id": "u17",
+     "line": 1,
+     "start": 9,
+     "end": 9,
+     "roman": "nikle",
+     "kind": "word",
+     "gloss": "appeared/emerged",
+     "base": "to come out",
+     "ur": "نکلے"
+    }
+   ],
+   "phrases": [],
+   "literal": [
+    [
+     {
+      "text": "In",
+      "units": [
+       "u4"
+      ]
+     },
+     {
+      "text": "this",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "age",
+      "units": [
+       "u3"
+      ]
+     },
+     {
+      "text": "wine-drinking",
+      "units": [
+       "u8"
+      ]
+     },
+     {
+      "text": "became",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "attributed",
+      "units": [
+       "u5"
+      ]
+     },
+     {
+      "text": "to",
+      "units": [
+       "u7"
+      ]
+     },
+     {
+      "text": "me",
+      "units": [
+       "u6"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "Again",
+      "units": [
+       "u9"
+      ]
+     },
+     {
+      "text": "came",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "that",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "age",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "when",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "the Cup of Jamshid",
+      "units": [
+       "u16"
+      ]
+     },
+     {
+      "text": "appeared",
+      "units": [
+       "u17"
+      ]
+     },
+     {
+      "text": "in",
+      "units": [
+       "u15"
+      ]
+     },
+     {
+      "text": "the world",
+      "units": [
+       "u14"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "In this age, wine-drinking has been pinned on me—",
+    "that age has come again when Jamshid’s cup appears in the world."
+   ],
+   "notes": [
+    "jām-e-jam is the legendary Cup of Jamshid, a Persian kingly goblet that revealed the world; here it also puns on an actual wine cup.",
+    "bāda-ashāmī is a formal Persian compound meaning wine-drinking or wine-bibbing, used almost as an accusation or title.",
+    "The verse ironically turns the speaker’s reputation for drinking into proof that a mythic, glorious age has returned."
+   ],
+   "cost": 0.02769228
+  },
+  {
+   "index": 6,
+   "is_matla": false,
+   "is_maqta": false,
+   "ur": [
+    "ہوئی جن سے توقع خستگی کی داد پانے کی",
+    "وہ ہم سے بھی زیادہ خستۂ تیغ ستم نکلے"
+   ],
+   "roman": [
+    "huī jin se tavaqqo ḳhastagī kī daad paane kī",
+    "vo ham se bhī ziyāda ḳhasta-e-teġh-e-sitam nikle"
+   ],
+   "words": [
+    [
+     "ہوئی",
+     "جن",
+     "سے",
+     "توقع",
+     "خستگی",
+     "کی",
+     "داد",
+     "پانے",
+     "کی"
+    ],
+    [
+     "وہ",
+     "ہم",
+     "سے",
+     "بھی",
+     "زیادہ",
+     "خستۂ",
+     "تیغ",
+     "ستم",
+     "نکلے"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "huī",
+     "kind": "word",
+     "gloss": "was / there was (fem.)",
+     "base": "happened; became",
+     "ur": "ہوئی"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "jin",
+     "kind": "word",
+     "gloss": "those from whom",
+     "base": "who; whom",
+     "ur": "جن"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "se",
+     "kind": "particle",
+     "gloss": "from",
+     "base": "",
+     "ur": "سے"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "tavaqqo",
+     "kind": "word",
+     "gloss": "expectation / hope",
+     "base": "",
+     "ur": "توقع"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "ḳhastagī",
+     "kind": "word",
+     "gloss": "affliction / woundedness",
+     "base": "fatigue; injury",
+     "ur": "خستگی"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "kī",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کی"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "daad",
+     "kind": "word",
+     "gloss": "sympathy / appreciation / justice",
+     "base": "praise; redress",
+     "ur": "داد"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "paane",
+     "kind": "word",
+     "gloss": "receiving / obtaining",
+     "base": "to get",
+     "ur": "پانے"
+    },
+    {
+     "id": "u9",
+     "line": 0,
+     "start": 8,
+     "end": 8,
+     "roman": "kī",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کی"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "vo",
+     "kind": "word",
+     "gloss": "they / those very people",
+     "base": "that; he/she/it",
+     "ur": "وہ"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "ham",
+     "kind": "word",
+     "gloss": "me / us",
+     "base": "we",
+     "ur": "ہم"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "se",
+     "kind": "particle",
+     "gloss": "than",
+     "base": "",
+     "ur": "سے"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "bhī",
+     "kind": "particle",
+     "gloss": "even",
+     "base": "",
+     "ur": "بھی"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "ziyāda",
+     "kind": "word",
+     "gloss": "more",
+     "base": "",
+     "ur": "زیادہ"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 5,
+     "end": 7,
+     "roman": "ḳhasta-e-teġh-e-sitam",
+     "kind": "compound",
+     "gloss": "wounded by the sword of cruelty",
+     "base": "",
+     "ur": "خستۂ تیغ ستم"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 8,
+     "end": 8,
+     "roman": "nikle",
+     "kind": "word",
+     "gloss": "turned out / emerged",
+     "base": "came out",
+     "ur": "نکلے"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u7",
+      "u8"
+     ],
+     "gloss": "to receive sympathy / appreciation / justice"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "Those from whom",
+      "units": [
+       "u2",
+       "u3"
+      ]
+     },
+     {
+      "text": "I had",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "expectation",
+      "units": [
+       "u4"
+      ]
+     },
+     {
+      "text": "of receiving",
+      "units": [
+       "u8",
+       "u9"
+      ]
+     },
+     {
+      "text": "sympathy",
+      "units": [
+       "u7"
+      ]
+     },
+     {
+      "text": "for woundedness",
+      "units": [
+       "u5",
+       "u6"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "they",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "turned out",
+      "units": [
+       "u16"
+      ]
+     },
+     {
+      "text": "even",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "more",
+      "units": [
+       "u14"
+      ]
+     },
+     {
+      "text": "wounded by the sword of cruelty",
+      "units": [
+       "u15"
+      ]
+     },
+     {
+      "text": "than me",
+      "units": [
+       "u11",
+       "u12"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "Those from whom I hoped to receive sympathy for my woundedness—",
+    "they turned out even more wounded by the sword of cruelty than I."
+   ],
+   "notes": [
+    "The phrase 'daad paana' means to receive sympathy, appreciation, or justice; 'daad' in classical Urdu often means praise or consolation for one's pain or art.",
+    "The same root 'khasta' is repeated in 'khastagī' and 'khasta-e-tegh-e-sitam', turning the speaker's woundedness back onto those from whom he expected sympathy.",
+    "'Tegh-e-sitam' (sword of cruelty) is a standard metaphor for the beloved's tyranny or the cruelty of fate.",
+    "The comparison 'ham se bhī ziyāda' creates an ironic reversal: the people he looked to for consolation prove even more afflicted than he is.",
+    "'Nikle' carries the sense of 'turned out' or 'proved to be', revealing the true state of those people."
+   ],
+   "cost": 0.02053953
+  },
+  {
+   "index": 7,
+   "is_matla": false,
+   "is_maqta": false,
+   "ur": [
+    "محبت میں نہیں ہے فرق جینے اور مرنے کا",
+    "اسی کو دیکھ کر جیتے ہیں جس کافر پہ دم نکلے"
+   ],
+   "roman": [
+    "mohabbat meñ nahīñ hai farq jiine aur marne kā",
+    "usī ko dekh kar jiite haiñ jis kāfir pe dam nikle"
+   ],
+   "words": [
+    [
+     "محبت",
+     "میں",
+     "نہیں",
+     "ہے",
+     "فرق",
+     "جینے",
+     "اور",
+     "مرنے",
+     "کا"
+    ],
+    [
+     "اسی",
+     "کو",
+     "دیکھ",
+     "کر",
+     "جیتے",
+     "ہیں",
+     "جس",
+     "کافر",
+     "پہ",
+     "دم",
+     "نکلے"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "mohabbat",
+     "kind": "word",
+     "gloss": "love",
+     "base": "",
+     "ur": "محبت"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "meñ",
+     "kind": "particle",
+     "gloss": "in",
+     "base": "",
+     "ur": "میں"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "nahīñ",
+     "kind": "particle",
+     "gloss": "not",
+     "base": "",
+     "ur": "نہیں"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "hai",
+     "kind": "word",
+     "gloss": "is",
+     "base": "",
+     "ur": "ہے"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "farq",
+     "kind": "word",
+     "gloss": "difference",
+     "base": "",
+     "ur": "فرق"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "jiine",
+     "kind": "word",
+     "gloss": "living",
+     "base": "to live",
+     "ur": "جینے"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "aur",
+     "kind": "particle",
+     "gloss": "and",
+     "base": "",
+     "ur": "اور"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "marne",
+     "kind": "word",
+     "gloss": "dying",
+     "base": "to die",
+     "ur": "مرنے"
+    },
+    {
+     "id": "u9",
+     "line": 0,
+     "start": 8,
+     "end": 8,
+     "roman": "kā",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کا"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "usī",
+     "kind": "word",
+     "gloss": "that very one",
+     "base": "that same",
+     "ur": "اسی"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "ko",
+     "kind": "particle",
+     "gloss": "to; marks object",
+     "base": "",
+     "ur": "کو"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 2,
+     "end": 3,
+     "roman": "dekh kar",
+     "kind": "compound",
+     "gloss": "seeing; upon seeing",
+     "base": "",
+     "ur": "دیکھ کر"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "jiite",
+     "kind": "word",
+     "gloss": "live",
+     "base": "to live",
+     "ur": "جیتے"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "haiñ",
+     "kind": "word",
+     "gloss": "are (auxiliary)",
+     "base": "",
+     "ur": "ہیں"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "jis",
+     "kind": "word",
+     "gloss": "whom; which",
+     "base": "",
+     "ur": "جس"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "kāfir",
+     "kind": "word",
+     "gloss": "infidel; cruel beloved",
+     "base": "unbeliever",
+     "ur": "کافر"
+    },
+    {
+     "id": "u17",
+     "line": 1,
+     "start": 8,
+     "end": 8,
+     "roman": "pe",
+     "kind": "particle",
+     "gloss": "on; upon",
+     "base": "",
+     "ur": "پہ"
+    },
+    {
+     "id": "u18",
+     "line": 1,
+     "start": 9,
+     "end": 9,
+     "roman": "dam",
+     "kind": "word",
+     "gloss": "breath; life-breath",
+     "base": "breath",
+     "ur": "دم"
+    },
+    {
+     "id": "u19",
+     "line": 1,
+     "start": 10,
+     "end": 10,
+     "roman": "nikle",
+     "kind": "word",
+     "gloss": "would depart; comes out",
+     "base": "to come out",
+     "ur": "نکلے"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u18",
+      "u19"
+     ],
+     "gloss": "to die; to expire; breath leaves the body"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "In love there is no difference of living and dying",
+      "units": [
+       "u2",
+       "u1",
+       "u3",
+       "u4",
+       "u5",
+       "u9",
+       "u6",
+       "u7",
+       "u8"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "By seeing that very one we live:",
+      "units": [
+       "u12",
+       "u10",
+       "u11",
+       "u13",
+       "u14"
+      ]
+     },
+     {
+      "text": "the",
+      "units": []
+     },
+     {
+      "text": "infidel",
+      "units": [
+       "u16"
+      ]
+     },
+     {
+      "text": "upon",
+      "units": [
+       "u17"
+      ]
+     },
+     {
+      "text": "whom",
+      "units": [
+       "u15"
+      ]
+     },
+     {
+      "text": "breath",
+      "units": [
+       "u18"
+      ]
+     },
+     {
+      "text": "would depart",
+      "units": [
+       "u19"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "In love, living and dying are one:",
+    "we live by seeing that very infidel at whose sight the breath expires."
+   ],
+   "notes": [
+    "The couplet turns on the paradox that in love, life and death are indistinguishable.",
+    "dam nikalnā is an idiom meaning to die or to expire.",
+    "kāfir here is the beloved, not a religious unbeliever; in ghazal convention the beloved is often a beautiful infidel or cruel idol.",
+    "The lover lives only through the sight of the beloved, yet that same sight makes the breath depart.",
+    "The relative jis kāfir refers back to usī in the first half, binding the whole couplet around a single shocking figure."
+   ],
+   "cost": 0.03050586
+  },
+  {
+   "index": 8,
+   "is_matla": false,
+   "is_maqta": true,
+   "ur": [
+    "کہاں مے خانہ کا دروازہ غالبؔ اور کہاں واعظ",
+    "پر اتنا جانتے ہیں کل وہ جاتا تھا کہ ہم نکلے"
+   ],
+   "roman": [
+    "kahāñ mai-ḳhāne kā darvāza 'ġhālib' aur kahāñ vaa.iz",
+    "par itnā jānte haiñ kal vo jaatā thā ki ham nikle"
+   ],
+   "words": [
+    [
+     "کہاں",
+     "مے",
+     "خانہ",
+     "کا",
+     "دروازہ",
+     "غالبؔ",
+     "اور",
+     "کہاں",
+     "واعظ"
+    ],
+    [
+     "پر",
+     "اتنا",
+     "جانتے",
+     "ہیں",
+     "کل",
+     "وہ",
+     "جاتا",
+     "تھا",
+     "کہ",
+     "ہم",
+     "نکلے"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "kahāñ",
+     "kind": "word",
+     "gloss": "where",
+     "base": "",
+     "ur": "کہاں"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 1,
+     "end": 2,
+     "roman": "mai-ḳhāne",
+     "kind": "compound",
+     "gloss": "tavern, wine-house",
+     "base": "wine-house",
+     "ur": "مے خانہ"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "kā",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کا"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "darvāza",
+     "kind": "word",
+     "gloss": "door, entrance",
+     "base": "",
+     "ur": "دروازہ"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "'ġhālib'",
+     "kind": "name",
+     "gloss": "Ghalib (the poet's pen name)",
+     "base": "victor, dominant",
+     "ur": "غالبؔ"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "aur",
+     "kind": "particle",
+     "gloss": "and",
+     "base": "",
+     "ur": "اور"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "kahāñ",
+     "kind": "word",
+     "gloss": "where",
+     "base": "",
+     "ur": "کہاں"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 8,
+     "end": 8,
+     "roman": "vaa.iz",
+     "kind": "word",
+     "gloss": "preacher",
+     "base": "admonisher",
+     "ur": "واعظ"
+    },
+    {
+     "id": "u9",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "par",
+     "kind": "particle",
+     "gloss": "but",
+     "base": "on",
+     "ur": "پر"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "itnā",
+     "kind": "word",
+     "gloss": "this much",
+     "base": "",
+     "ur": "اتنا"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "jānte",
+     "kind": "word",
+     "gloss": "know",
+     "base": "to know",
+     "ur": "جانتے"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "haiñ",
+     "kind": "word",
+     "gloss": "are (present auxiliary)",
+     "base": "",
+     "ur": "ہیں"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "kal",
+     "kind": "word",
+     "gloss": "yesterday",
+     "base": "yesterday/tomorrow",
+     "ur": "کل"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "vo",
+     "kind": "word",
+     "gloss": "he",
+     "base": "that/those",
+     "ur": "وہ"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "jātā",
+     "kind": "word",
+     "gloss": "going",
+     "base": "to go",
+     "ur": "جاتا"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "thā",
+     "kind": "word",
+     "gloss": "was (past auxiliary)",
+     "base": "",
+     "ur": "تھا"
+    },
+    {
+     "id": "u17",
+     "line": 1,
+     "start": 8,
+     "end": 8,
+     "roman": "ki",
+     "kind": "particle",
+     "gloss": "as, when",
+     "base": "that",
+     "ur": "کہ"
+    },
+    {
+     "id": "u18",
+     "line": 1,
+     "start": 9,
+     "end": 9,
+     "roman": "ham",
+     "kind": "word",
+     "gloss": "we/I",
+     "base": "",
+     "ur": "ہم"
+    },
+    {
+     "id": "u19",
+     "line": 1,
+     "start": 10,
+     "end": 10,
+     "roman": "nikle",
+     "kind": "word",
+     "gloss": "came out, emerged",
+     "base": "came out",
+     "ur": "نکلے"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u1",
+      "u6",
+      "u7"
+     ],
+     "gloss": "where X and where Y (idiom of vast difference, no comparison)"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "Where",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "is",
+      "units": []
+     },
+     {
+      "text": "the tavern's door,",
+      "units": [
+       "u2",
+       "u3",
+       "u4"
+      ]
+     },
+     {
+      "text": "Ghalib,",
+      "units": [
+       "u5"
+      ]
+     },
+     {
+      "text": "and",
+      "units": [
+       "u6"
+      ]
+     },
+     {
+      "text": "where",
+      "units": [
+       "u7"
+      ]
+     },
+     {
+      "text": "is",
+      "units": []
+     },
+     {
+      "text": "the preacher?",
+      "units": [
+       "u8"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "But",
+      "units": [
+       "u9"
+      ]
+     },
+     {
+      "text": "this much",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "we know:",
+      "units": [
+       "u11",
+       "u12"
+      ]
+     },
+     {
+      "text": "yesterday",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "he",
+      "units": [
+       "u14"
+      ]
+     },
+     {
+      "text": "was going",
+      "units": [
+       "u15",
+       "u16"
+      ]
+     },
+     {
+      "text": "as",
+      "units": [
+       "u17"
+      ]
+     },
+     {
+      "text": "we",
+      "units": [
+       "u18"
+      ]
+     },
+     {
+      "text": "came out.",
+      "units": [
+       "u19"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "Where stands the tavern door, Ghalib—and where the preacher?",
+    "Yet this I know: he was heading in as I came out yesterday."
+   ],
+   "notes": [
+    "The pattern 'kahāñ ... aur kahāñ' expresses enormous separation or total lack of comparison between two things.",
+    "The preacher is a stock figure of outward piety, so his appearing at the tavern door hints at hypocrisy.",
+    "The tavern door is a symbolic threshold of forbidden pleasure, contrasted with the preacher's public morality.",
+    "The word 'kal' can mean yesterday or tomorrow, but the past auxiliary 'thā' fixes it here as yesterday.",
+    "The line suggests a simultaneous encounter at the threshold: the preacher enters as the poet or speaker leaves."
+   ],
+   "cost": 0.02765664
+  }
+ ],
+ "cost": 0.3805
+}

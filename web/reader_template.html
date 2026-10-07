@@ -1,0 +1,440 @@
+<title>Zabandan Reader</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400;1,6..72,500&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap">
+<style>
+/* Layout: one reading column. Each couplet's Urdu sits in a gold double rule like a manuscript
+   jadval; translations and the word panel follow. A nazm groups couplets into stanzas. */
+:root {
+  --paper: #eff2f7;
+  --panel: #ffffff;
+  --ink: #1a2133;
+  --muted: #586179;
+  --rule: #cbd1dd;
+  --lapis: #2b4899;
+  --gold: #a7781c;
+  --hl: rgba(43, 72, 153, 0.13);
+  --hl-soft: rgba(167, 120, 28, 0.14);
+
+  --f-urdu: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Urdu Typesetting", "Noto Naskh Arabic", serif;
+  --f-text: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --f-ui: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+
+  --s-1: 0.8125rem;
+  --s0: 1.0625rem;
+  --s1: 1.25rem;
+  --s2: 1.6rem;
+  --s3: clamp(1.9rem, 5vw, 2.6rem);
+  --urdu: clamp(1.05rem, 4.4vw, 2.05rem);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0d1220; --panel: #141a2a; --ink: #e4e7ef; --muted: #98a1b6; --rule: #2a3349;
+    --lapis: #9fb3f3; --gold: #d3a74b; --hl: rgba(159, 179, 243, 0.17); --hl-soft: rgba(211, 167, 75, 0.16);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0d1220; --panel: #141a2a; --ink: #e4e7ef; --muted: #98a1b6; --rule: #2a3349;
+  --lapis: #9fb3f3; --gold: #d3a74b; --hl: rgba(159, 179, 243, 0.17); --hl-soft: rgba(211, 167, 75, 0.16);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--f-text);
+  font-size: var(--s0);
+  line-height: 1.6;
+  padding-inline: 16px;
+  padding-block: 1.5rem 4rem;
+}
+.wrap { max-width: 46rem; margin: 0 auto; display: grid; gap: 2rem; }
+.stack { display: grid; gap: 3rem; }
+
+.site { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem; }
+.brand { font-family: var(--f-ui); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: var(--s-1); color: var(--muted); }
+.brand .ur { font-family: var(--f-urdu); font-weight: 400; letter-spacing: 0; text-transform: none; font-size: 1rem; color: var(--lapis); margin-inline-start: 0.4rem; }
+.poems { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.poem-tab {
+  font: inherit; font-family: var(--f-text); font-size: var(--s0); color: var(--ink); background: none;
+  border: 0; border-bottom: 2px solid transparent; padding: 0.2rem 0.1rem; cursor: pointer;
+}
+.poem-tab small { font-family: var(--f-ui); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-inline-start: 0.35rem; }
+.poem-tab[aria-selected="true"] { border-bottom-color: var(--gold); }
+
+header { display: grid; gap: 0.9rem; }
+.eyebrow { font-family: var(--f-ui); font-size: var(--s-1); font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+h1 { margin: 0; font-weight: 400; font-style: italic; font-size: var(--s3); line-height: 1.15; text-wrap: balance; }
+h1::first-letter { text-transform: uppercase; }
+h1 .en { font-style: normal; color: var(--muted); font-size: 0.6em; display: block; margin-top: 0.3rem; }
+.h1-urdu { font-family: var(--f-urdu); font-size: var(--s1); line-height: 2.2; color: var(--lapis); margin: 0; }
+.summary { margin: 0; max-width: 62ch; }
+.meta { display: grid; gap: 0.35rem; font-family: var(--f-ui); font-size: var(--s-1); color: var(--muted); max-width: 62ch; }
+.meta p { margin: 0; }
+.meta b { font-weight: 600; color: var(--ink); }
+.meta .ur { font-family: var(--f-urdu); font-size: 1rem; color: var(--lapis); }
+.turns { margin: 0; padding-inline-start: 1.1rem; display: grid; gap: 0.3rem; max-width: 62ch; }
+
+.controls {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem;
+  font-family: var(--f-ui); font-size: var(--s-1);
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 2;
+  background: var(--paper); padding-block: 0.6rem; border-bottom: 1px solid var(--rule);
+}
+.controls .hint { color: var(--muted); margin-inline-end: auto; }
+.seg-ctl { display: inline-flex; border: 1px solid var(--rule); border-radius: 999px; overflow: hidden; background: var(--panel); }
+.seg-ctl button { font: inherit; color: var(--ink); background: none; border: 0; padding: 0.3rem 0.8rem; cursor: pointer; }
+.seg-ctl button + button { border-inline-start: 1px solid var(--rule); }
+.seg-ctl button[aria-pressed="true"] { background: var(--hl); color: var(--lapis); }
+.toggle { font: inherit; color: var(--ink); background: var(--panel); border: 1px solid var(--rule); border-radius: 999px; padding: 0.3rem 0.8rem; cursor: pointer; }
+.toggle[aria-pressed="true"] { border-color: var(--lapis); color: var(--lapis); background: var(--hl); }
+button:focus-visible, .seg:focus-visible, summary:focus-visible { outline: 2px solid var(--lapis); outline-offset: 2px; }
+
+.stanza { display: grid; gap: 1.5rem; }
+.st-head { display: grid; gap: 0.25rem; border-top: 1px solid var(--gold); padding-top: 0.75rem; }
+.st-head h2 { margin: 0; font-family: var(--f-ui); font-size: var(--s-1); font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); }
+.st-head p { margin: 0; font-style: italic; color: var(--muted); max-width: 62ch; }
+
+.couplet { display: grid; gap: 1rem; }
+.c-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.75rem; font-family: var(--f-ui); font-size: var(--s-1); color: var(--muted); }
+.c-num { font-family: var(--f-text); font-size: var(--s1); color: var(--gold); font-variant-numeric: tabular-nums; }
+.c-tag { letter-spacing: 0.06em; text-transform: uppercase; }
+.c-role { font-family: var(--f-text); font-style: italic; font-size: var(--s0); color: var(--muted); }
+
+.verse {
+  background: var(--panel); border: 1px solid var(--gold); outline: 1px solid var(--gold); outline-offset: 3px;
+  margin: 4px; padding: 1rem clamp(0.75rem, 3vw, 1.5rem); display: grid; gap: 0.35rem;
+}
+.line-ur { direction: rtl; font-family: var(--f-urdu); font-size: var(--urdu); line-height: 2.35; text-align: center; margin: 0; }
+.u { font: inherit; color: inherit; background: none; border: 0; padding: 0 0.08em; border-radius: 4px; cursor: pointer; line-height: inherit; }
+.u:hover { background: var(--hl); }
+.u.in-phrase { text-decoration: underline dotted var(--gold); text-underline-offset: 0.55em; text-decoration-thickness: 1.5px; }
+.u.sel { background: var(--hl); color: var(--lapis); }
+.u.rel { background: var(--hl-soft); }
+.line-roman { margin: 0 0 0.4rem; text-align: center; font-style: italic; color: var(--muted); }
+
+.panel { border-inline-start: 3px solid var(--lapis); background: var(--panel); padding: 0.9rem 1rem; display: grid; gap: 0.5rem; position: relative; }
+.panel-top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.35rem 0.9rem; padding-inline-end: 2rem; }
+.p-ur { font-family: var(--f-urdu); font-size: var(--s2); line-height: 2; color: var(--lapis); direction: rtl; }
+.p-roman { font-style: italic; font-size: var(--s1); }
+.chip { font-family: var(--f-ui); font-size: 0.75rem; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid var(--rule); border-radius: 999px; padding: 0.05rem 0.55rem; color: var(--muted); }
+.p-gloss { font-size: var(--s1); margin: 0; }
+.p-base { margin: 0; font-family: var(--f-ui); font-size: var(--s-1); color: var(--muted); }
+.p-phrase { margin: 0; padding: 0.5rem 0.75rem; background: var(--hl-soft); border-radius: 6px; }
+.p-phrase .ur { font-family: var(--f-urdu); }
+.close { position: absolute; top: 0.5rem; inset-inline-end: 0.5rem; width: 2rem; height: 2rem; font: 600 1.1rem/1 var(--f-ui); color: var(--muted); background: none; border: 0; border-radius: 6px; cursor: pointer; }
+.close:hover { background: var(--hl); }
+
+.tr { display: grid; gap: 0.25rem; }
+.tr-label { font-family: var(--f-ui); font-size: var(--s-1); letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.tr p { margin: 0; }
+.poetic p { font-size: var(--s1); line-height: 1.5; }
+.seg { border-radius: 3px; cursor: pointer; }
+.seg.linked:hover { background: var(--hl); }
+.seg.sel { background: var(--hl); color: var(--lapis); }
+.seg.rel { background: var(--hl-soft); }
+
+details { font-size: var(--s0); }
+summary { font-family: var(--f-ui); font-size: var(--s-1); color: var(--lapis); cursor: pointer; width: fit-content; }
+details ul { margin: 0.5rem 0 0; padding-inline-start: 1.1rem; display: grid; gap: 0.4rem; max-width: 62ch; }
+
+body.no-roman .line-roman, body.no-literal .literal, body.no-notes .notes { display: none; }
+
+footer { font-family: var(--f-ui); font-size: var(--s-1); color: var(--muted); border-top: 1px solid var(--rule); padding-top: 1rem; display: grid; gap: 0.4rem; max-width: 62ch; }
+footer p { margin: 0; }
+
+@media (prefers-reduced-motion: no-preference) { .u, .seg { transition: background-color 120ms ease, color 120ms ease; } }
+</style>
+
+<div class="wrap">
+  <div class="site">
+    <span class="brand">Zabandan<span class="ur" lang="ur">زباندان</span></span>
+    <nav class="poems" id="poems" role="tablist" aria-label="Poems"></nav>
+  </div>
+
+  <header id="head"></header>
+
+  <div class="controls" role="toolbar" aria-label="Display options">
+    <span class="hint">Tap any Urdu word to see what it means in that couplet.</span>
+    <span class="seg-ctl" id="models" role="group" aria-label="Which model's reading"></span>
+    <button class="toggle" id="t-roman" aria-pressed="true">Roman</button>
+    <button class="toggle" id="t-literal" aria-pressed="true">Literal</button>
+    <button class="toggle" id="t-notes" aria-pressed="true">Notes</button>
+  </div>
+
+  <main id="body" class="stack"></main>
+
+  <footer id="footer"></footer>
+</div>
+
+<script type="application/json" id="data">__DATA__</script>
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById("data").textContent);
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  function store(key, val) {
+    try { if (val === undefined) return localStorage.getItem(key); localStorage.setItem(key, val); } catch (e) {}
+    return null;
+  }
+
+  var state = { poem: D.poems[0].id, model: D.models[0].name, close: null };
+  var fromHash = location.hash.slice(1);
+  if (D.poems.some(function (p) { return p.id === fromHash; })) state.poem = fromHash;
+  var savedModel = store("zabandan.model");
+  if (D.models.some(function (m) { return m.name === savedModel; })) state.model = savedModel;
+
+  // Poem tabs
+  var tabs = document.getElementById("poems");
+  D.poems.forEach(function (p) {
+    var b = el("button", "poem-tab");
+    b.type = "button";
+    b.setAttribute("role", "tab");
+    b.dataset.id = p.id;
+    b.append(p.title_short, el("small", null, p.form));
+    b.addEventListener("click", function () { state.poem = p.id; history.replaceState(null, "", "#" + p.id); render(); });
+    tabs.append(b);
+  });
+
+  // Model switch
+  var mctl = document.getElementById("models");
+  D.models.forEach(function (m) {
+    var b = el("button", null, m.label);
+    b.type = "button";
+    b.dataset.name = m.name;
+    b.title = m.note;
+    b.addEventListener("click", function () { state.model = m.name; store("zabandan.model", m.name); render(); });
+    mctl.append(b);
+  });
+
+  function render() {
+    if (state.close) state.close();
+    var poem = D.poems.filter(function (p) { return p.id === state.poem; })[0];
+    var v = poem.variants[state.model] || poem.variants[Object.keys(poem.variants)[0]];
+    var ov = v.overview || {};
+    Array.from(tabs.children).forEach(function (b) { b.setAttribute("aria-selected", String(b.dataset.id === poem.id)); });
+    Array.from(mctl.children).forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.name === state.model)); });
+
+    // Header
+    var head = document.getElementById("head");
+    head.textContent = "";
+    var nSt = poem.stanza_lengths.length;
+    var bits = [poem.poet, poem.form === "nazm" ? "Nazm" : "Ghazal"];
+    if (poem.collection) bits.push(poem.collection);
+    bits.push(poem.form === "nazm" ? nSt + " stanzas, " + poem.stanza_lengths.reduce(function (a, b) { return a + b; }, 0) + " lines" : v.blocks.length + " couplets");
+    head.append(el("div", "eyebrow", bits.join(" · ")));
+    var h1 = el("h1", null, poem.title_roman);
+    if (poem.title_en) h1.append(el("span", "en", poem.title_en));
+    head.append(h1);
+    var hu = el("p", "h1-urdu", poem.title_ur); hu.lang = "ur"; hu.dir = "rtl";
+    head.append(hu);
+    if (ov.summary) head.append(el("p", "summary", ov.summary));
+    var meta = el("div", "meta");
+    if (poem.form === "ghazal") {
+      if (ov.radif) {
+        var r = el("p");
+        r.append(el("b", null, "Radif (refrain): "), el("span", "ur", ov.radif.ur), " " + ov.radif.roman + ", “" + ov.radif.en + "”, ends every second line.");
+        meta.append(r);
+      }
+      if (ov.qafiya && ov.qafiya.length) {
+        var q = el("p");
+        q.append(el("b", null, "Qafiya (rhyme): "), Array.from(new Set(ov.qafiya)).join(", "));
+        meta.append(q);
+      }
+    } else {
+      [["Speaker", ov.speaker], ["Form", ov.form], ["Other readings", ov.readings]].forEach(function (pair) {
+        if (!pair[1]) return;
+        var p = el("p"); p.append(el("b", null, pair[0] + ": "), pair[1]); meta.append(p);
+      });
+    }
+    if (meta.children.length) head.append(meta);
+    if (ov.turns && ov.turns.length) {
+      head.append(el("div", "eyebrow", "Where the poem turns"));
+      var tl = el("ul", "turns");
+      ov.turns.forEach(function (t) { tl.append(el("li", null, t)); });
+      head.append(tl);
+    }
+
+    // Body
+    var body = document.getElementById("body");
+    body.textContent = "";
+    var roles = {};
+    (ov.stanzas || []).forEach(function (s) { roles[s.stanza] = s.role; });
+    var current = null, currentStanza = -1;
+    v.blocks.forEach(function (b, bi) {
+      var parent = body;
+      if (poem.form === "nazm") {
+        if (b.stanza !== currentStanza) {
+          currentStanza = b.stanza;
+          current = el("section", "stanza");
+          var sh = el("div", "st-head");
+          sh.append(el("h2", null, "Stanza " + (b.stanza + 1) + " of " + nSt));
+          if (roles[b.stanza + 1]) sh.append(el("p", null, roles[b.stanza + 1]));
+          current.append(sh);
+          body.append(current);
+        }
+        parent = current;
+      }
+      parent.append(couplet(b, bi, poem));
+    });
+
+    // Footer
+    var f = document.getElementById("footer");
+    f.textContent = "";
+    f.append(el("p", null, poem.source + "."));
+    if (poem.text_notes) f.append(el("p", null, "Text notes: " + poem.text_notes));
+    f.append(el("p", null, "Urdu words are split by code, so the text shown is the original. " +
+      (poem.form === "nazm" ? "The Roman transliteration was written by the model. " : "") +
+      "Translations, word meanings and notes were generated by " + v.model + " and checked automatically for completeness, " +
+      "not yet reviewed by a person. Treat them as a reading aid, not an authority."));
+  }
+
+  function couplet(c, ci, poem) {
+    var units = {}, phrasesOf = {};
+    c.units.forEach(function (u) { units[u.id] = u; phrasesOf[u.id] = []; });
+    (c.phrases || []).forEach(function (p) { (p.units || []).forEach(function (id) { if (phrasesOf[id]) phrasesOf[id].push(p); }); });
+    var nLines = c.words.length;
+
+    var sec = el("section", "couplet");
+    sec.setAttribute("aria-label", "Couplet " + (ci + 1));
+    var head = el("div", "c-head");
+    head.append(el("span", "c-num", String(ci + 1)));
+    if (c.is_matla) head.append(el("span", "c-tag", "Matla · opening couplet, both lines rhyme"));
+    if (c.is_maqta) head.append(el("span", "c-tag", "Maqta · closing couplet, with the poet's name"));
+    if (c.role) head.append(el("span", "c-role", c.role));
+    sec.append(head);
+
+    var verse = el("div", "verse"), btns = {};
+    for (var li = 0; li < nLines; li++) {
+      var p = el("p", "line-ur");
+      p.lang = "ur";
+      c.units.filter(function (u) { return u.line === li; })
+        .sort(function (a, b) { return a.start - b.start; })
+        .forEach(function (u, k) {
+          if (k) p.append(" ");
+          var b = el("button", "u", u.ur);
+          b.type = "button";
+          b.setAttribute("aria-pressed", "false");
+          b.setAttribute("aria-label", u.ur + ", " + u.roman);
+          if (phrasesOf[u.id].length) b.classList.add("in-phrase");
+          b.addEventListener("click", function () { select(u.id); });
+          btns[u.id] = b;
+          p.append(b);
+        });
+      verse.append(p);
+      var rp = el("p", "line-roman", (c.roman || [])[li] || "");
+      rp.lang = "ur-Latn";
+      verse.append(rp);
+    }
+    sec.append(verse);
+
+    var panel = el("div", "panel");
+    panel.hidden = true;
+    panel.setAttribute("role", "region");
+    panel.setAttribute("aria-live", "polite");
+    panel.setAttribute("aria-label", "Word meaning");
+    sec.append(panel);
+
+    var segs = [];
+    var lit = el("div", "tr literal");
+    lit.append(el("div", "tr-label", "Literal"));
+    (c.literal || []).forEach(function (line) {
+      var p = el("p");
+      (line || []).forEach(function (s, k) {
+        if (k) p.append(" ");
+        var sp = el("span", "seg", s.text);
+        var us = s.units || [];
+        if (us.length) {
+          sp.classList.add("linked");
+          sp.tabIndex = 0;
+          sp.setAttribute("role", "button");
+          var go = function () { select(us[0]); };
+          sp.addEventListener("click", go);
+          sp.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
+        }
+        segs.push({ el: sp, units: us });
+        p.append(sp);
+      });
+      lit.append(p);
+    });
+    sec.append(lit);
+
+    var poe = el("div", "tr poetic");
+    poe.append(el("div", "tr-label", "Poetic"));
+    (c.poetic || []).forEach(function (l) { poe.append(el("p", null, l)); });
+    sec.append(poe);
+
+    if (c.notes && c.notes.length) {
+      var det = el("details", "notes");
+      det.append(el("summary", null, c.notes.length + (c.notes.length === 1 ? " note" : " notes") + " on wordplay and allusion"));
+      var ul = el("ul");
+      c.notes.forEach(function (n) { ul.append(el("li", null, n)); });
+      det.append(ul);
+      sec.append(det);
+    }
+
+    function clear() {
+      Object.keys(btns).forEach(function (id) { btns[id].classList.remove("sel", "rel"); btns[id].setAttribute("aria-pressed", "false"); });
+      segs.forEach(function (s) { s.el.classList.remove("sel", "rel"); });
+    }
+    function close() { clear(); panel.hidden = true; if (state.close === close) state.close = null; }
+    function select(id) {
+      if (state.close && state.close !== close) state.close();
+      var u = units[id], ps = phrasesOf[id] || [];
+      if (!u) return;
+      clear();
+      btns[id].classList.add("sel");
+      btns[id].setAttribute("aria-pressed", "true");
+      var related = {};
+      ps.forEach(function (p) { p.units.forEach(function (x) { if (x !== id) related[x] = true; }); });
+      Object.keys(related).forEach(function (x) { if (btns[x]) btns[x].classList.add("rel"); });
+      segs.forEach(function (s) {
+        if (s.units.indexOf(id) >= 0) s.el.classList.add("sel");
+        else if (s.units.some(function (x) { return related[x]; })) s.el.classList.add("rel");
+      });
+      panel.textContent = "";
+      var top = el("div", "panel-top");
+      var pu = el("span", "p-ur", u.ur); pu.lang = "ur";
+      top.append(pu, el("span", "p-roman", u.roman));
+      if (u.kind && u.kind !== "word") top.append(el("span", "chip", u.kind));
+      panel.append(top, el("p", "p-gloss", u.gloss));
+      if (u.base) panel.append(el("p", "p-base", "Usual sense: " + u.base));
+      ps.forEach(function (p) {
+        var box = el("p", "p-phrase");
+        var words = p.units.map(function (x) { return units[x]; }).filter(Boolean)
+          .sort(function (a, b) { return a.line - b.line || a.start - b.start; });
+        var ur = el("span", "ur", words.map(function (w) { return w.ur; }).join(" … "));
+        ur.lang = "ur";
+        box.append("Part of the expression ", ur, " (" + words.map(function (w) { return w.roman; }).join(" … ") + "): " + p.gloss);
+        panel.append(box);
+      });
+      var x = el("button", "close", "×");
+      x.type = "button";
+      x.setAttribute("aria-label", "Close word meaning");
+      x.addEventListener("click", function () { close(); btns[id].focus(); });
+      panel.append(x);
+      panel.hidden = false;
+      state.close = close;
+    }
+    return sec;
+  }
+
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && state.close) state.close(); });
+
+  [["t-roman", "no-roman"], ["t-literal", "no-literal"], ["t-notes", "no-notes"]].forEach(function (pair) {
+    var b = document.getElementById(pair[0]), key = "zabandan." + pair[1];
+    var off = store(key) === "1";
+    function apply() { document.body.classList.toggle(pair[1], off); b.setAttribute("aria-pressed", String(!off)); }
+    b.addEventListener("click", function () { off = !off; apply(); store(key, off ? "1" : "0"); });
+    apply();
+  });
+
+  render();
+})();
+</script>

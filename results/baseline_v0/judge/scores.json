@@ -1,0 +1,632 @@
+{
+ "b01A": [
+  4,
+  4,
+  5,
+  3,
+  "pun explained; 'far too few to stay' is rhyme padding that bends the sense"
+ ],
+ "b01B": [
+  5,
+  4,
+  5,
+  4,
+  "keeps 'came out' for both senses in the literal; notes say why English can't"
+ ],
+ "b01C": [
+  5,
+  4,
+  5,
+  3,
+  "correct, pun explained; poetic 'realized' is flat"
+ ],
+ "b02A": [
+  5,
+  4,
+  4,
+  4,
+  "wahdat al-wujud named, but doesn't spell out the implied 'I would have been God'"
+ ],
+ "b02B": [
+  5,
+  4,
+  5,
+  4,
+  "names the implied answer: I would have remained in God"
+ ],
+ "b02C": [
+  3,
+  4,
+  3,
+  3,
+  "'what would there be?' mistranslates 'maiñ to kyā hotā' (what would I have been)"
+ ],
+ "b03A": [
+  5,
+  4,
+  5,
+  4,
+  "plain and faithful; notes restrained"
+ ],
+ "b03B": [
+  5,
+  3,
+  4,
+  3,
+  "'what ails thee... agony' over-embellishes plain diction"
+ ],
+ "b03C": [
+  5,
+  4,
+  5,
+  4,
+  "plain and faithful; notes restrained"
+ ],
+ "b04A": [
+  5,
+  3,
+  5,
+  3,
+  "pun explained, but 'wasted shell / man of merit' loses the kaam contrast"
+ ],
+ "b04B": [
+  5,
+  3,
+  5,
+  3,
+  "pun explained; 'idle / worth' loses the contrast"
+ ],
+ "b04C": [
+  5,
+  4,
+  5,
+  4,
+  "'good-for-nothing ... man of use' keeps the contrast in English"
+ ],
+ "b05A": [
+  5,
+  4,
+  5,
+  4,
+  "'this fancy will do' catches the wry tone"
+ ],
+ "b05B": [
+  5,
+  4,
+  4,
+  4,
+  "accurate; irony stated less sharply"
+ ],
+ "b05C": [
+  5,
+  4,
+  5,
+  3,
+  "irony well explained; 'quite fine' is weak"
+ ],
+ "b06A": [
+  4,
+  3,
+  3,
+  2,
+  "misses the paper-robe petitioner custom; 'again and again' is filler"
+ ],
+ "b06B": [
+  4,
+  4,
+  3,
+  3,
+  "misses the custom; 'shroud' adds a death sense not in the original"
+ ],
+ "b06C": [
+  4,
+  3,
+  3,
+  3,
+  "misses the custom; Sufi reading only"
+ ],
+ "b07A": [
+  5,
+  4,
+  5,
+  4,
+  "poetic keeps both senses of surat: 'no way out, no face'"
+ ],
+ "b07B": [
+  3,
+  3,
+  4,
+  3,
+  "misreads 'bar aana' (comes to my aid); claims 'bar' is metrical filler"
+ ],
+ "b07C": [
+  5,
+  4,
+  5,
+  3,
+  "both senses in literal and notes; poetic keeps only 'face'"
+ ],
+ "b08A": [
+  5,
+  4,
+  5,
+  4,
+  "'[only] master' right; Mir identified"
+ ],
+ "b08B": [
+  2,
+  3,
+  3,
+  3,
+  "drops 'tumhin' (alone): says Ghalib is NOT a master, reversing the sense"
+ ],
+ "b08C": [
+  5,
+  4,
+  5,
+  4,
+  "'you alone', Mir dated, 'mir = chief' double sense"
+ ],
+ "b09A": [
+  4,
+  3,
+  5,
+  3,
+  "aadmi/insan explained; poetic 'making every burden light' changes line 1"
+ ],
+ "b09B": [
+  4,
+  3,
+  5,
+  3,
+  "aadmi/insan explained; 'bas-ki' rendered as 'because'"
+ ],
+ "b09C": [
+  5,
+  4,
+  5,
+  4,
+  "aadmi/insan and bas-ki both explained; faithful poetic"
+ ],
+ "b10A": [
+  5,
+  4,
+  5,
+  4,
+  "rhymed, misreading kept"
+ ],
+ "b10B": [
+  5,
+  4,
+  5,
+  4,
+  "notes the two-way ambiguity of 'un ke dekhe se'"
+ ],
+ "b10C": [
+  5,
+  4,
+  5,
+  4,
+  "adds fever-flush reading of raunaq"
+ ],
+ "b11A": [
+  5,
+  4,
+  4,
+  4,
+  "keeps the 'before me' refrain; over-reads a temporal sense"
+ ],
+ "b11B": [
+  5,
+  4,
+  4,
+  4,
+  "keeps refrain; tone tilts to dismissive ('no real consequence')"
+ ],
+ "b11C": [
+  5,
+  4,
+  4,
+  3,
+  "tone tilts to dismissive ('futile')"
+ ],
+ "b12A": [
+  5,
+  4,
+  5,
+  3,
+  "aur pivot explained; 'something more' shifts 'different' to 'better'"
+ ],
+ "b12B": [
+  5,
+  4,
+  5,
+  4,
+  "'sets him apart', rhymed"
+ ],
+ "b12C": [
+  5,
+  4,
+  5,
+  4,
+  "'of another kind' keeps the understated boast"
+ ],
+ "b13A": [
+  5,
+  4,
+  5,
+  4,
+  "leaves the wine open: disqualification is also a mystic credential"
+ ],
+ "b13B": [
+  5,
+  3,
+  4,
+  3,
+  "'drunkard' resolves the wine to a literal vice"
+ ],
+ "b13C": [
+  5,
+  4,
+  4,
+  4,
+  "both readings named; leans literal"
+ ],
+ "b14A": [
+  5,
+  4,
+  5,
+  4,
+  "sight of the wine as sustenance"
+ ],
+ "b14B": [
+  4,
+  3,
+  5,
+  3,
+  "'my eyes still hold their breath' imports the wrong idiom"
+ ],
+ "b14C": [
+  5,
+  4,
+  5,
+  4,
+  "keeps 'for now' (abhi); good notes"
+ ],
+ "b15A": [
+  3,
+  4,
+  3,
+  4,
+  "reads sar as 'end of the tress'; misses sar hona = to be won"
+ ],
+ "b15B": [
+  5,
+  4,
+  5,
+  4,
+  "'tresses are conquered'; explains the double sense"
+ ],
+ "b15C": [
+  3,
+  4,
+  3,
+  4,
+  "reads sar as 'end of the tress'; misses sar hona = to be won"
+ ],
+ "b16A": [
+  5,
+  4,
+  4,
+  4,
+  "correct; jaane repetition only partly explained"
+ ],
+ "b16B": [
+  5,
+  4,
+  4,
+  4,
+  "rhymed 'woe/know'"
+ ],
+ "b16C": [
+  5,
+  4,
+  5,
+  4,
+  "explains the jaane play"
+ ],
+ "b17A": [
+  5,
+  4,
+  5,
+  4,
+  "restrained, 'single petal'"
+ ],
+ "b17B": [
+  5,
+  4,
+  5,
+  4,
+  "restrained; notes the deceptive-simplicity style (sahl-e-mumtana)"
+ ],
+ "b17C": [
+  5,
+  4,
+  5,
+  3,
+  "restrained; poetic is just the literal again"
+ ],
+ "b18A": [
+  5,
+  4,
+  5,
+  3,
+  "pun explained; 'fatal tale' is rhyme padding"
+ ],
+ "b18B": [
+  5,
+  4,
+  5,
+  4,
+  "keeps the kaam echo across the lines"
+ ],
+ "b18C": [
+  5,
+  4,
+  5,
+  3,
+  "pun explained; poetic drops the kaam echo"
+ ],
+ "b19A": [
+  2,
+  2,
+  3,
+  3,
+  "qashqa as 'hookah' and dair as 'sat a while': both wrong"
+ ],
+ "b19B": [
+  3,
+  3,
+  3,
+  3,
+  "qashqa as 'lock of hair': wrong; dair right"
+ ],
+ "b19C": [
+  5,
+  4,
+  4,
+  3,
+  "qashqa (tilak) and dair right; irony as hyperbole, not explicitly non-literal"
+ ],
+ "b20A": [
+  5,
+  4,
+  5,
+  4,
+  "khudi as selfhood, not ego"
+ ],
+ "b20B": [
+  5,
+  4,
+  5,
+  4,
+  "khudi as selfhood; role reversal noted"
+ ],
+ "b20C": [
+  5,
+  4,
+  5,
+  4,
+  "also notes the raza inversion (God asking man's will)"
+ ],
+ "b21A": [
+  5,
+  4,
+  5,
+  3,
+  "nam as water and grace; 'beyond compare' padding"
+ ],
+ "b21B": [
+  5,
+  4,
+  5,
+  3,
+  "adds Iqbal = 'prosperity'; poetic flat"
+ ],
+ "b21C": [
+  5,
+  3,
+  5,
+  2,
+  "'dew' and 'bloom great' are weak choices"
+ ],
+ "b22A": [
+  5,
+  4,
+  4,
+  4,
+  "liminality well caught; irony of 'khuub parda' not named"
+ ],
+ "b22B": [
+  4,
+  4,
+  4,
+  4,
+  "chilman described as a muslin curtain (it's a bamboo screen)"
+ ],
+ "b22C": [
+  5,
+  4,
+  5,
+  4,
+  "bamboo screen, purdah, the wit explained"
+ ],
+ "b23A": [
+  3,
+  3,
+  4,
+  3,
+  "literal garbled ('the name of the one we know'); dagh = scar noted"
+ ],
+ "b23B": [
+  5,
+  4,
+  5,
+  4,
+  "'only we know', dagh = stain, the naming politics of Urdu"
+ ],
+ "b23C": [
+  3,
+  3,
+  3,
+  3,
+  "misses hamin (only we); doesn't explain the pen name"
+ ],
+ "b24A": [
+  5,
+  4,
+  5,
+  3,
+  "Zafar = victory, Delhi as the beloved's lane, Rangoon; poetic word order stiff"
+ ],
+ "b24B": [
+  5,
+  4,
+  5,
+  3,
+  "same points plus the Sufi reading; poetic stiff"
+ ],
+ "b24C": [
+  5,
+  4,
+  5,
+  4,
+  "same points; cleaner poetic"
+ ],
+ "b25A": [
+  5,
+  4,
+  5,
+  3,
+  "1857 Delhi; explains 'kis ki bani hai'; 'fleeting grace' padding"
+ ],
+ "b25B": [
+  4,
+  4,
+  4,
+  4,
+  "literal hedges ('[hope/bond]'); poetic 'build a home' is a nice touch"
+ ],
+ "b25C": [
+  5,
+  4,
+  4,
+  4,
+  "plain and accurate"
+ ],
+ "b26A": [
+  5,
+  4,
+  4,
+  4,
+  "excellent on the bhi parallel; misses the satirical/political reading"
+ ],
+ "b26B": [
+  5,
+  4,
+  4,
+  4,
+  "social hypocrisy; no political reading"
+ ],
+ "b26C": [
+  4,
+  4,
+  5,
+  3,
+  "gives the political reading; 'leave not a single trace' changes 'no talk'"
+ ],
+ "b27A": [
+  5,
+  4,
+  5,
+  3,
+  "Akbar's subversion caught; 'make it right' padding"
+ ],
+ "b27B": [
+  5,
+  4,
+  5,
+  3,
+  "inversion caught; 'some rite' padding"
+ ],
+ "b27C": [
+  5,
+  4,
+  5,
+  3,
+  "inversion caught; 'a cause to defend' padding"
+ ],
+ "b28A": [
+  3,
+  3,
+  3,
+  3,
+  "khat only as contour/script; misses the first down; 'unsealed' is odd"
+ ],
+ "b28B": [
+  5,
+  4,
+  5,
+  4,
+  "khat as down, line and letter; notes Wali's style"
+ ],
+ "b28C": [
+  3,
+  3,
+  2,
+  3,
+  "khat only as contour; misses the double sense"
+ ],
+ "b29A": [
+  5,
+  4,
+  4,
+  4,
+  "slightly embellished ('vessel ... far shore'); Sufi gloss added"
+ ],
+ "b29B": [
+  5,
+  4,
+  4,
+  4,
+  "explains yunhi; notes Hali's plain reformist style"
+ ],
+ "b29C": [
+  5,
+  4,
+  5,
+  4,
+  "stays plain; 'somehow' for yunhi"
+ ],
+ "b30A": [
+  3,
+  3,
+  3,
+  3,
+  "qashqa as 'cap': wrong"
+ ],
+ "b30B": [
+  5,
+  4,
+  5,
+  4,
+  "qashqa and zunnar right and explained; keeps the terms"
+ ],
+ "b30C": [
+  3,
+  3,
+  3,
+  3,
+  "qashqa as 'pagan's cap': wrong"
+ ]
+}

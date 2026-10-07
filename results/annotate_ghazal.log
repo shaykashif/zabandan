@@ -1,0 +1,22 @@
+== hazaaron-khvaahishen (ghazal, 9 couplets): deepseek-v4-pro, gemma-4-31b
+  [deepseek-v4-pro] couplet 8: ok (19 units, 1 phrases, 1 attempt, $0.030)
+  [deepseek-v4-pro] couplet 6: ok (17 units, 0 phrases, 1 attempt, $0.028)
+  [deepseek-v4-pro] couplet 5: ok (21 units, 2 phrases, 1 attempt, $0.037)
+  [deepseek-v4-pro] couplet 7: ok (17 units, 1 phrases, 1 attempt, $0.025)
+  [deepseek-v4-pro] couplet 4: ok (15 units, 2 phrases, 1 attempt, $0.027)
+  [deepseek-v4-pro] couplet 3: ok (17 units, 1 phrases, 1 attempt, $0.036)
+  [deepseek-v4-pro] couplet 2: ok (18 units, 1 phrases, 1 attempt, $0.027)
+  [deepseek-v4-pro] couplet 1: ok (18 units, 2 phrases, 1 attempt, $0.037)
+  [deepseek-v4-pro] couplet 9: ok (19 units, 1 phrases, 1 attempt, $0.032)
+== [deepseek-v4-pro] wrote data\annotated\hazaaron-khvaahishen.deepseek-v4-pro.json: $0.2911, 9 requests for 9 couplets
+  [gemma-4-31b] couplet 1: ok (18 units, 2 phrases, 1 attempt, $0.002)
+  [gemma-4-31b] couplet 7: ok (16 units, 1 phrases, 1 attempt, $0.002)
+  [gemma-4-31b] couplet 3: attempt 1 invalid: ['reply was not valid JSON']
+  [gemma-4-31b] couplet 8: ok (20 units, 2 phrases, 1 attempt, $0.006)
+  [gemma-4-31b] couplet 4: ok (15 units, 2 phrases, 1 attempt, $0.003)
+  [gemma-4-31b] couplet 9: ok (19 units, 1 phrases, 1 attempt, $0.007)
+  [gemma-4-31b] couplet 6: ok (19 units, 2 phrases, 1 attempt, $0.006)
+  [gemma-4-31b] couplet 5: ok (21 units, 1 phrases, 1 attempt, $0.007)
+  [gemma-4-31b] couplet 3: ok (18 units, 2 phrases, 2 attempts, $0.011)
+  [gemma-4-31b] couplet 2: ok (23 units, 5 phrases, 1 attempt, $0.003)
+== [gemma-4-31b] wrote data\annotated\hazaaron-khvaahishen.gemma-4-31b.json: $0.0476, 10 requests for 9 couplets

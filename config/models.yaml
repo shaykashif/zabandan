@@ -1,0 +1,111 @@
+# Models for Zabandan. All open-weight except the optional reference.
+# Checked against Hugging Face, Ollama and OpenRouter on 2026-10-06.
+#
+# Decision 2026-10-06: run everything on OpenRouter. Default model deepseek-v4-pro,
+# budget option gemma-4-31b. Chosen from Claude's blind scoring of the top three
+# (results/baseline_v0/judge/): DeepSeek was most accurate (2 serious meaning errors
+# in 30 vs 4 and 7) and faster than gemma-4-31b. Local and weaker models are disabled; their
+# baseline_v0 results are kept for reference.
+#
+# OpenRouter requests only go to providers serving bf16 or fp8 weights (override
+# per model with `quantizations`), so quality doesn't vary with the provider.
+# fp4 and undisclosed providers are excluded. DeepSeek V4 is natively fp8.
+#
+# Local hardware: RTX 4070 Laptop, 8 GB VRAM, 32 GB RAM.
+# 8B models fit at 4-bit (~5 GB); 12B spills slightly into RAM.
+#
+# backend: ollama     -> http://localhost:11434, `model` is the Ollama tag. With
+#                       `source` + `chat_format`, scripts/ollama_pull.py builds
+#                       `model` from `source` with that chat template.
+# backend: openrouter -> needs OPENROUTER_API_KEY in .env, `model` is the OpenRouter id
+
+models:
+  # Urdu specialists, run locally. Disabled: they scored below the Llama control on
+  # baseline_v0, and an Urdu-prompt retest (baseline_v0_retest) didn't close the gap.
+  - name: qalb-8b
+    hf_id: enstazao/Qalb-1.0-8B-Instruct
+    licence: Apache-2.0
+    backend: ollama
+    model: qalb-8b-chat
+    source: hf.co/mradermacher/Qalb-1.0-8B-Instruct-GGUF:Q4_K_M
+    chat_format: llama3  # the GGUF has no chat template; from the model card
+    # Model card settings. Its system prompt's second sentence ("answer in Urdu")
+    # is dropped because we ask for English.
+    system: "آپ ایک مددگار اور بے ضرر مصنوعی ذہانت کے اسسٹنٹ ہیں۔"
+    temperature: 0.1
+    enabled: false
+
+  - name: alif-8b
+    hf_id: large-traversaal/Alif-1.0-8B-Instruct
+    licence: Apache-2.0  # HF model card; the GitHub repo says MIT
+    backend: ollama
+    model: alif-8b-chat
+    source: hf.co/large-traversaal/Alif-1.0-8B-Instruct:Q4_K_M
+    chat_format: alpaca  # the GGUF has no chat template; from Training/train_ft.py
+    temperature: 0.3     # model card example
+    enabled: false
+
+  # Control: same base as Alif and Qalb, without Urdu training.
+  - name: llama-3.1-8b
+    hf_id: meta-llama/Llama-3.1-8B-Instruct
+    licence: Llama 3.1 Community
+    backend: ollama
+    model: llama3.1:8b
+    enabled: false
+
+  # Strongest general open model that runs on this laptop. Disabled after the
+  # baseline_v0 run (results kept): it thinks at length and managed only ~13 tok/s,
+  # ~114 s per couplet. Use the hosted Gemma models instead.
+  - name: gemma-4-12b
+    hf_id: google/gemma-4-12B-it
+    licence: Apache-2.0
+    backend: ollama
+    model: gemma4:12b
+    enabled: false
+
+  # Hosted on OpenRouter.
+  # Default: best blind score (17.1/20), 2 serious meaning errors in 30, ~40 s and
+  # ~$0.01 per couplet.
+  - name: deepseek-v4-pro
+    hf_id: deepseek-ai/DeepSeek-V4-Pro-0813
+    licence: MIT
+    backend: openrouter
+    model: deepseek/deepseek-v4-pro-0813
+    role: default
+    enabled: true
+
+  - name: qwen3.8-27b
+    hf_id: Qwen/Qwen3.8-27B
+    licence: Apache-2.0
+    backend: openrouter
+    model: qwen/qwen3.8-27b
+    # Disabled: 24/28 on baseline_v0 and mistranslated armān as "sighs" on b01.
+    enabled: false
+
+  # Budget option: blind score 16.4/20, 4 serious meaning errors in 30, ~$0.0007 per
+  # couplet but ~77 s. Mistranslated cultural terms (qashqa) that DeepSeek got right.
+  - name: gemma-4-31b
+    hf_id: google/gemma-4-31B-it
+    licence: Apache-2.0
+    backend: openrouter
+    model: google/gemma-4-31b-it
+    role: budget
+    enabled: true
+
+  # Mixture-of-experts: 4B of 26B parameters active per token, so cheap and fast.
+  # Fastest (~20 s) but 7 serious meaning errors in 30 on the blind scoring, e.g.
+  # dropping 'tumhin' (you alone) on b08. Not for anything readers rely on.
+  - name: gemma-4-26b-a4b
+    hf_id: google/gemma-4-26B-A4B-it
+    licence: Apache-2.0
+    backend: openrouter
+    model: google/gemma-4-26b-a4b-it
+    role: bulk
+    enabled: true
+
+  # Optional reference, scored only to measure the gap to a frontier model.
+  - name: claude-opus-5.5
+    licence: proprietary
+    backend: openrouter
+    model: anthropic/claude-opus-5.5
+    enabled: false

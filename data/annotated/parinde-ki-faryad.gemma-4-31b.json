@@ -1,0 +1,3962 @@
+{
+ "id": "parinde-ki-faryad",
+ "form": "nazm",
+ "title_ur": "پرندے کی فریاد",
+ "title_roman": "Parinde kī Faryād",
+ "title_en": "The Bird's Lament",
+ "poet": "Allama Iqbal",
+ "poet_ur": "علامہ اقبال",
+ "collection": "Bāng-e-Darā (1924)",
+ "source": "Urdu Wikisource, https://ur.wikisource.org/wiki/پر_ندے_کی_فریاد (tagged PD-Pakistan)",
+ "text_notes": "Corrected one Wikisource typo, قفسں to قفس (stanza 2, line 6). Diacritics kept as in the source.\n",
+ "stanza_lengths": [
+  10,
+  6,
+  6
+ ],
+ "model": "google/gemma-4-31b-it",
+ "model_name": "gemma-4-31b",
+ "overview": {
+  "summary": "The poem is a poignant lament of a caged bird longing for its lost freedom and home. It progresses from nostalgic recollections of the past to the agony of current imprisonment, concluding with a desperate plea for liberation.",
+  "speaker": "A caged bird speaking to itself, God, and its captor while trapped in a cage.",
+  "form": "The poem is composed of three stanzas of varying lengths (10, 6, and 6 lines) with a flexible rhyme scheme that prioritizes thematic flow over strict structural repetition.",
+  "stanzas": [
+   {
+    "stanza": 1,
+    "role": "Establishes the emotional baseline by contrasting the joy of past freedom and companionship with the sorrow of current captivity."
+   },
+   {
+    "stanza": 2,
+    "role": "Emphasizes the bird's current isolation and despair, highlighting the irony of a blooming spring outside the dark cage."
+   },
+   {
+    "stanza": 3,
+    "role": "Reinterprets the bird's song as a cry of pain and makes a direct, humble appeal for mercy and freedom to the captor."
+   }
+  ],
+  "turns": [
+   "Stanza 1, Line 9: Shift from nostalgic memories of the past to the stark, silent reality of the cage.",
+   "Stanza 2, Line 5: Shift from lamenting personal misfortune to a direct prayer to the Divine.",
+   "Stanza 3, Line 3: Shift from describing internal grief to addressing the external listener and captor."
+  ],
+  "readings": "The poem serves as a political allegory for the longing for independence from colonial rule and a spiritual metaphor for the soul's yearning for liberation from the material world."
+ },
+ "blocks": [
+  {
+   "stanza": 0,
+   "first_line": 0,
+   "ur": [
+    "آتا ہے یاد مجھ کو گزرا ہوا زمانا",
+    "وہ باغ کی بہاریں، وہ سب کا چہچہانا"
+   ],
+   "roman": [
+    "āta hai yād mujh ko guzrā huā zamānā",
+    "voh bāġh kī bahārēñ voh sab kā chahchahānā"
+   ],
+   "index": 0,
+   "words": [
+    [
+     "آتا",
+     "ہے",
+     "یاد",
+     "مجھ",
+     "کو",
+     "گزرا",
+     "ہوا",
+     "زمانا"
+    ],
+    [
+     "وہ",
+     "باغ",
+     "کی",
+     "بہاریں،",
+     "وہ",
+     "سب",
+     "کا",
+     "چہچہانا"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u0",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "āta",
+     "kind": "word",
+     "gloss": "comes",
+     "base": "to come",
+     "ur": "آتا"
+    },
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "hai",
+     "kind": "particle",
+     "gloss": "is",
+     "base": "",
+     "ur": "ہے"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "yād",
+     "kind": "word",
+     "gloss": "memory",
+     "base": "memory",
+     "ur": "یاد"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "mujh",
+     "kind": "word",
+     "gloss": "me",
+     "base": "I/me",
+     "ur": "مجھ"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "ko",
+     "kind": "particle",
+     "gloss": "to",
+     "base": "",
+     "ur": "کو"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "guzrā",
+     "kind": "word",
+     "gloss": "passed",
+     "base": "to pass",
+     "ur": "گزرا"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "huā",
+     "kind": "word",
+     "gloss": "happened",
+     "base": "to happen",
+     "ur": "ہوا"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "zamānā",
+     "kind": "word",
+     "gloss": "time",
+     "base": "era",
+     "ur": "زمانا"
+    },
+    {
+     "id": "u8",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "voh",
+     "kind": "word",
+     "gloss": "those",
+     "base": "that/those",
+     "ur": "وہ"
+    },
+    {
+     "id": "u9",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "bāġh",
+     "kind": "word",
+     "gloss": "garden",
+     "base": "garden",
+     "ur": "باغ"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "kī",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کی"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "bahārēñ",
+     "kind": "word",
+     "gloss": "springs",
+     "base": "spring",
+     "ur": "بہاریں،"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "voh",
+     "kind": "word",
+     "gloss": "those",
+     "base": "that/those",
+     "ur": "وہ"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "sab",
+     "kind": "word",
+     "gloss": "all",
+     "base": "all",
+     "ur": "سب"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "kā",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کا"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "chahchahānā",
+     "kind": "word",
+     "gloss": "chirping",
+     "base": "to chirp",
+     "ur": "چہچہانا"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u0",
+      "u2"
+     ],
+     "gloss": "to remember"
+    },
+    {
+     "id": "p2",
+     "units": [
+      "u5",
+      "u6"
+     ],
+     "gloss": "passed/gone by"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "Comes",
+      "units": [
+       "u0",
+       "u1"
+      ]
+     },
+     {
+      "text": "memory",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "to me",
+      "units": [
+       "u3",
+       "u4"
+      ]
+     },
+     {
+      "text": "the passed",
+      "units": [
+       "u5",
+       "u6"
+      ]
+     },
+     {
+      "text": "time",
+      "units": [
+       "u7"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "Those",
+      "units": [
+       "u8"
+      ]
+     },
+     {
+      "text": "garden's",
+      "units": [
+       "u9",
+       "u10"
+      ]
+     },
+     {
+      "text": "springs",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "those",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "everyone's",
+      "units": [
+       "u13",
+       "u14"
+      ]
+     },
+     {
+      "text": "chirping",
+      "units": [
+       "u15"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "I remember the days of long ago,",
+    "The garden's springs, the chorus of the birds."
+   ],
+   "notes": [
+    "yād āna is an idiomatic expression meaning 'to remember' or 'to recall'.",
+    "zamānā refers to a lost era, evoking a sense of irrevocable loss.",
+    "bāġh (garden) is a classical symbol for the homeland or a place of joy.",
+    "chahchahānā (chirping) represents the social harmony and happiness of the bird's past."
+   ],
+   "role": "Introduces the theme of nostalgia, recalling the lost joy of freedom and companionship.",
+   "attempts": 1,
+   "cost": 0.0028392
+  },
+  {
+   "stanza": 0,
+   "first_line": 2,
+   "ur": [
+    "آزادیاں کہاں وہ اب اپنے گھونسلے کی",
+    "اپنی خوشی سے آنا، اپنی خوشی سے جانا"
+   ],
+   "roman": [
+    "āzādiyāñ kahāñ voh ab apne ghūñsale kī",
+    "apnī ḳhushī se ānā apnī ḳhushī se jānā"
+   ],
+   "index": 1,
+   "words": [
+    [
+     "آزادیاں",
+     "کہاں",
+     "وہ",
+     "اب",
+     "اپنے",
+     "گھونسلے",
+     "کی"
+    ],
+    [
+     "اپنی",
+     "خوشی",
+     "سے",
+     "آنا،",
+     "اپنی",
+     "خوشی",
+     "سے",
+     "جانا"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u0",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "āzādiyāñ",
+     "kind": "word",
+     "gloss": "freedoms",
+     "base": "freedom",
+     "ur": "آزادیاں"
+    },
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "kahāñ",
+     "kind": "word",
+     "gloss": "where",
+     "base": "",
+     "ur": "کہاں"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "voh",
+     "kind": "word",
+     "gloss": "those",
+     "base": "",
+     "ur": "وہ"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "ab",
+     "kind": "word",
+     "gloss": "now",
+     "base": "",
+     "ur": "اب"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "apne",
+     "kind": "word",
+     "gloss": "my own",
+     "base": "self/own",
+     "ur": "اپنے"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "ghūñsale",
+     "kind": "word",
+     "gloss": "nest",
+     "base": "",
+     "ur": "گھونسلے"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "kī",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کی"
+    },
+    {
+     "id": "u7",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "apnī",
+     "kind": "word",
+     "gloss": "my own",
+     "base": "self/own",
+     "ur": "اپنی"
+    },
+    {
+     "id": "u8",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "ḳhushī",
+     "kind": "word",
+     "gloss": "will",
+     "base": "happiness",
+     "ur": "خوشی"
+    },
+    {
+     "id": "u9",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "se",
+     "kind": "particle",
+     "gloss": "by",
+     "base": "",
+     "ur": "سے"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "ānā",
+     "kind": "word",
+     "gloss": "coming",
+     "base": "to come",
+     "ur": "آنا،"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "apnī",
+     "kind": "word",
+     "gloss": "my own",
+     "base": "self/own",
+     "ur": "اپنی"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "ḳhushī",
+     "kind": "word",
+     "gloss": "will",
+     "base": "happiness",
+     "ur": "خوشی"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "se",
+     "kind": "particle",
+     "gloss": "by",
+     "base": "",
+     "ur": "سے"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "jānā",
+     "kind": "word",
+     "gloss": "going",
+     "base": "to go",
+     "ur": "جانا"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u7",
+      "u8",
+      "u9"
+     ],
+     "gloss": "of one's own free will"
+    },
+    {
+     "id": "p2",
+     "units": [
+      "u11",
+      "u12",
+      "u13"
+     ],
+     "gloss": "of one's own free will"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "Freedoms",
+      "units": [
+       "u0"
+      ]
+     },
+     {
+      "text": "where",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "those",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "now",
+      "units": [
+       "u3"
+      ]
+     },
+     {
+      "text": "my own",
+      "units": [
+       "u4"
+      ]
+     },
+     {
+      "text": "nest",
+      "units": [
+       "u5"
+      ]
+     },
+     {
+      "text": "of",
+      "units": [
+       "u6"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "My own",
+      "units": [
+       "u7"
+      ]
+     },
+     {
+      "text": "will",
+      "units": [
+       "u8"
+      ]
+     },
+     {
+      "text": "by",
+      "units": [
+       "u9"
+      ]
+     },
+     {
+      "text": "coming",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "my own",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "will",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "by",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "going",
+      "units": [
+       "u14"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "Where are those freedoms now, the liberties of my nest?",
+    "To come as I pleased, to go as I pleased."
+   ],
+   "notes": [
+    "The word 'kahāñ' (where) is used rhetorically to lament a permanent loss.",
+    "The repetition of 'apnī ḳhushī se' emphasizes the absolute autonomy the bird once possessed."
+   ],
+   "role": "Contrasts the current captivity with the autonomy and freedom of the bird's former home.",
+   "attempts": 1,
+   "cost": 0.00703225
+  },
+  {
+   "stanza": 0,
+   "first_line": 4,
+   "ur": [
+    "لگتی ہے چوٹ دل پر، آتا ہے یاد جس دم",
+    "شبنم کے آنسوؤں پر کلیوں کا مُسکرانا"
+   ],
+   "roman": [
+    "lagtī hai cōṭ dil par ātā hai yād jis dam",
+    "shabnam ke āñsūoñ par kaliyoñ kā muskurānā"
+   ],
+   "index": 2,
+   "words": [
+    [
+     "لگتی",
+     "ہے",
+     "چوٹ",
+     "دل",
+     "پر،",
+     "آتا",
+     "ہے",
+     "یاد",
+     "جس",
+     "دم"
+    ],
+    [
+     "شبنم",
+     "کے",
+     "آنسوؤں",
+     "پر",
+     "کلیوں",
+     "کا",
+     "مُسکرانا"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u0",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "lagtī",
+     "kind": "word",
+     "gloss": "is felt",
+     "base": "",
+     "ur": "لگتی"
+    },
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "hai",
+     "kind": "particle",
+     "gloss": "is",
+     "base": "",
+     "ur": "ہے"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "cōṭ",
+     "kind": "word",
+     "gloss": "a blow",
+     "base": "",
+     "ur": "چوٹ"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "dil",
+     "kind": "word",
+     "gloss": "heart",
+     "base": "",
+     "ur": "دل"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "par",
+     "kind": "particle",
+     "gloss": "on",
+     "base": "",
+     "ur": "پر،"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "ātā",
+     "kind": "word",
+     "gloss": "comes",
+     "base": "",
+     "ur": "آتا"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "hai",
+     "kind": "particle",
+     "gloss": "is",
+     "base": "",
+     "ur": "ہے"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "yād",
+     "kind": "word",
+     "gloss": "memory",
+     "base": "",
+     "ur": "یاد"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 8,
+     "end": 8,
+     "roman": "jis",
+     "kind": "particle",
+     "gloss": "that",
+     "base": "",
+     "ur": "جس"
+    },
+    {
+     "id": "u9",
+     "line": 0,
+     "start": 9,
+     "end": 9,
+     "roman": "dam",
+     "kind": "word",
+     "gloss": "moment",
+     "base": "breath",
+     "ur": "دم"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "shabnam",
+     "kind": "word",
+     "gloss": "dew",
+     "base": "",
+     "ur": "شبنم"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "ke",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کے"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "āñsūoñ",
+     "kind": "word",
+     "gloss": "tears",
+     "base": "",
+     "ur": "آنسوؤں"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "par",
+     "kind": "particle",
+     "gloss": "upon",
+     "base": "",
+     "ur": "پر"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "kaliyoñ",
+     "kind": "word",
+     "gloss": "buds",
+     "base": "",
+     "ur": "کلیوں"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "kā",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کا"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "muskurānā",
+     "kind": "word",
+     "gloss": "smiling",
+     "base": "",
+     "ur": "مُسکرانا"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u0",
+      "u2"
+     ],
+     "gloss": "to be struck/hurt"
+    },
+    {
+     "id": "p2",
+     "units": [
+      "u5",
+      "u7"
+     ],
+     "gloss": "to remember/come to mind"
+    },
+    {
+     "id": "p3",
+     "units": [
+      "u8",
+      "u9"
+     ],
+     "gloss": "at the moment that"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "is felt",
+      "units": [
+       "u0",
+       "u1"
+      ]
+     },
+     {
+      "text": "a blow",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "on the heart",
+      "units": [
+       "u3",
+       "u4"
+      ]
+     },
+     {
+      "text": "comes",
+      "units": [
+       "u5",
+       "u6"
+      ]
+     },
+     {
+      "text": "memory",
+      "units": [
+       "u7"
+      ]
+     },
+     {
+      "text": "at that moment",
+      "units": [
+       "u8",
+       "u9"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "dew",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "of",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "tears",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "upon",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "buds",
+      "units": [
+       "u14"
+      ]
+     },
+     {
+      "text": "of",
+      "units": [
+       "u15"
+      ]
+     },
+     {
+      "text": "smiling",
+      "units": [
+       "u16"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "My heart is struck with pain whenever I recall",
+    "The buds smiling upon the dew-drop tears."
+   ],
+   "notes": [
+    "The 'tears of dew' is a classical poetic trope where dew represents the sorrow of nature.",
+    "The contrast between the 'blow' (cōṭ) and 'smiling' (muskurānā) emphasizes the pain of nostalgia.",
+    "Dam literally means breath, but in this context, it refers to a specific moment of time."
+   ],
+   "role": "Transitions from general nostalgia to a specific, poignant image of nature to deepen the sense of loss.",
+   "attempts": 1,
+   "cost": 0.0031326
+  },
+  {
+   "stanza": 0,
+   "first_line": 6,
+   "ur": [
+    "وہ پیاری پیاری صورت، وہ کامنی سی مورت",
+    "آباد جس کے دم سے تھا میرا آشیانا"
+   ],
+   "roman": [
+    "woh pyāri pyāri sūrat woh kāmnī sī mūrat",
+    "ābād jis ke dam se thā merā āshiyāna"
+   ],
+   "index": 3,
+   "words": [
+    [
+     "وہ",
+     "پیاری",
+     "پیاری",
+     "صورت،",
+     "وہ",
+     "کامنی",
+     "سی",
+     "مورت"
+    ],
+    [
+     "آباد",
+     "جس",
+     "کے",
+     "دم",
+     "سے",
+     "تھا",
+     "میرا",
+     "آشیانا"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u0",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "woh",
+     "kind": "word",
+     "gloss": "that",
+     "base": "",
+     "ur": "وہ"
+    },
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "pyāri",
+     "kind": "word",
+     "gloss": "lovely",
+     "base": "",
+     "ur": "پیاری"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "pyāri",
+     "kind": "word",
+     "gloss": "lovely",
+     "base": "",
+     "ur": "پیاری"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "sūrat",
+     "kind": "word",
+     "gloss": "face",
+     "base": "",
+     "ur": "صورت،"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "woh",
+     "kind": "word",
+     "gloss": "that",
+     "base": "",
+     "ur": "وہ"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "kāmnī",
+     "kind": "word",
+     "gloss": "graceful",
+     "base": "desirable",
+     "ur": "کامنی"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "sī",
+     "kind": "particle",
+     "gloss": "like",
+     "base": "",
+     "ur": "سی"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "mūrat",
+     "kind": "word",
+     "gloss": "idol-like form",
+     "base": "statue",
+     "ur": "مورت"
+    },
+    {
+     "id": "u8",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "ābād",
+     "kind": "word",
+     "gloss": "flourishing",
+     "base": "inhabited",
+     "ur": "آباد"
+    },
+    {
+     "id": "u9",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "jis",
+     "kind": "word",
+     "gloss": "whom",
+     "base": "",
+     "ur": "جس"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "ke",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کے"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "dam",
+     "kind": "word",
+     "gloss": "presence",
+     "base": "breath",
+     "ur": "دم"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "se",
+     "kind": "particle",
+     "gloss": "by",
+     "base": "",
+     "ur": "سے"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "thā",
+     "kind": "word",
+     "gloss": "was",
+     "base": "",
+     "ur": "تھا"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "merā",
+     "kind": "word",
+     "gloss": "my",
+     "base": "",
+     "ur": "میرا"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "āshiyāna",
+     "kind": "word",
+     "gloss": "nest",
+     "base": "",
+     "ur": "آشیانا"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u11",
+      "u12"
+     ],
+     "gloss": "by virtue of"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "That",
+      "units": [
+       "u0"
+      ]
+     },
+     {
+      "text": "lovely",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "lovely",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "face",
+      "units": [
+       "u3"
+      ]
+     },
+     {
+      "text": "that",
+      "units": [
+       "u4"
+      ]
+     },
+     {
+      "text": "graceful",
+      "units": [
+       "u5"
+      ]
+     },
+     {
+      "text": "like",
+      "units": [
+       "u6"
+      ]
+     },
+     {
+      "text": "form",
+      "units": [
+       "u7"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "Flourishing",
+      "units": [
+       "u8"
+      ]
+     },
+     {
+      "text": "whom",
+      "units": [
+       "u9"
+      ]
+     },
+     {
+      "text": "of",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "presence",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "by",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "was",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "my",
+      "units": [
+       "u14"
+      ]
+     },
+     {
+      "text": "nest",
+      "units": [
+       "u15"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "That lovely, lovely face, that idol of grace,",
+    "Whose presence made my little nest a happy place."
+   ],
+   "notes": [
+    "Mūrat (idol) evokes the classical 'but' imagery, where the beloved's beauty is divine.",
+    "Āshiyāna (nest) symbolizes the bird's lost home and emotional security.",
+    "Kāmnī describes a beauty that is both physically and spiritually alluring.",
+    "The repetition of 'pyāri' emphasizes the depth of the bird's affection."
+   ],
+   "role": "Introduces the lost companion, shifting the nostalgia from general surroundings to a specific, loved presence.",
+   "attempts": 1,
+   "cost": 0.006649
+  },
+  {
+   "stanza": 0,
+   "first_line": 8,
+   "ur": [
+    "آتی نہیں صدائیں اُس کی مرے قفس میں",
+    "ہوتی مری رہائی اے کاش میرے بس میں!"
+   ],
+   "roman": [
+    "ātī nahīñ sadā'ēñ us kī mere qafas mēñ",
+    "hotī merī rahā'ī ae kāsh mere bas mēñ"
+   ],
+   "index": 4,
+   "words": [
+    [
+     "آتی",
+     "نہیں",
+     "صدائیں",
+     "اُس",
+     "کی",
+     "مرے",
+     "قفس",
+     "میں"
+    ],
+    [
+     "ہوتی",
+     "مری",
+     "رہائی",
+     "اے",
+     "کاش",
+     "میرے",
+     "بس",
+     "میں!"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u0",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "ātī",
+     "kind": "word",
+     "gloss": "come",
+     "base": "",
+     "ur": "آتی"
+    },
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "nahīñ",
+     "kind": "word",
+     "gloss": "not",
+     "base": "",
+     "ur": "نہیں"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "sadā'ēñ",
+     "kind": "word",
+     "gloss": "calls",
+     "base": "call; voice",
+     "ur": "صدائیں"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "us",
+     "kind": "word",
+     "gloss": "that one",
+     "base": "",
+     "ur": "اُس"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "kī",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کی"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "mere",
+     "kind": "word",
+     "gloss": "my",
+     "base": "",
+     "ur": "مرے"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "qafas",
+     "kind": "word",
+     "gloss": "cage",
+     "base": "",
+     "ur": "قفس"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "mēñ",
+     "kind": "word",
+     "gloss": "in",
+     "base": "",
+     "ur": "میں"
+    },
+    {
+     "id": "u8",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "hotī",
+     "kind": "word",
+     "gloss": "would be",
+     "base": "to be; happen",
+     "ur": "ہوتی"
+    },
+    {
+     "id": "u9",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "merī",
+     "kind": "word",
+     "gloss": "my",
+     "base": "",
+     "ur": "مری"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "rahā'ī",
+     "kind": "word",
+     "gloss": "release",
+     "base": "liberation; freedom",
+     "ur": "رہائی"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "ae",
+     "kind": "particle",
+     "gloss": "O",
+     "base": "",
+     "ur": "اے"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "kāsh",
+     "kind": "word",
+     "gloss": "if only",
+     "base": "",
+     "ur": "کاش"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "mere",
+     "kind": "word",
+     "gloss": "my",
+     "base": "",
+     "ur": "میرے"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "bas",
+     "kind": "word",
+     "gloss": "control",
+     "base": "power; limit",
+     "ur": "بس"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "mēñ",
+     "kind": "word",
+     "gloss": "in",
+     "base": "",
+     "ur": "میں!"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u13",
+      "u14",
+      "u15"
+     ],
+     "gloss": "within my power"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "come",
+      "units": [
+       "u0"
+      ]
+     },
+     {
+      "text": "not",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "calls",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "that one",
+      "units": [
+       "u3"
+      ]
+     },
+     {
+      "text": "of",
+      "units": [
+       "u4"
+      ]
+     },
+     {
+      "text": "my",
+      "units": [
+       "u5"
+      ]
+     },
+     {
+      "text": "cage",
+      "units": [
+       "u6"
+      ]
+     },
+     {
+      "text": "in",
+      "units": [
+       "u7"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "would be",
+      "units": [
+       "u8"
+      ]
+     },
+     {
+      "text": "my",
+      "units": [
+       "u9"
+      ]
+     },
+     {
+      "text": "release",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "O",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "if only",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "my",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "control",
+      "units": [
+       "u14"
+      ]
+     },
+     {
+      "text": "in",
+      "units": [
+       "u15"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "No calls of hers reach me here in this cage,",
+    "If only my freedom were within my power!"
+   ],
+   "notes": [
+    "The 'calls' refer to the companion mentioned in the previous lines, heightening the sense of isolation.",
+    "Qafas (cage) is a central symbol for both physical captivity and political oppression.",
+    "The phrase 'bas mēñ honā' is a common Urdu idiom for having control or agency over a situation."
+   ],
+   "role": "Shifts the poem from nostalgic memories of the past to the stark, silent reality of the cage.",
+   "attempts": 1,
+   "cost": 0.0059715
+  },
+  {
+   "stanza": 1,
+   "first_line": 0,
+   "ur": [
+    "کیا بد نصیب ہوں مَیں گھر کو ترس رہا ہوں",
+    "ساتھی تو ہیں وطن میں، مَیں قید میں پڑا ہوں"
+   ],
+   "roman": [
+    "kyā bad nasīb hūñ maiñ ghar ko taras rahā hūñ",
+    "sāthī to haiñ vatan meñ maiñ ḳaid meñ paṛā hūñ"
+   ],
+   "index": 5,
+   "words": [
+    [
+     "کیا",
+     "بد",
+     "نصیب",
+     "ہوں",
+     "مَیں",
+     "گھر",
+     "کو",
+     "ترس",
+     "رہا",
+     "ہوں"
+    ],
+    [
+     "ساتھی",
+     "تو",
+     "ہیں",
+     "وطن",
+     "میں،",
+     "مَیں",
+     "قید",
+     "میں",
+     "پڑا",
+     "ہوں"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u0",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "kyā",
+     "kind": "particle",
+     "gloss": "how",
+     "base": "",
+     "ur": "کیا"
+    },
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "bad",
+     "kind": "word",
+     "gloss": "bad",
+     "base": "",
+     "ur": "بد"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "nasīb",
+     "kind": "word",
+     "gloss": "fortune",
+     "base": "destiny",
+     "ur": "نصیب"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "hūñ",
+     "kind": "word",
+     "gloss": "am",
+     "base": "",
+     "ur": "ہوں"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "maiñ",
+     "kind": "word",
+     "gloss": "I",
+     "base": "",
+     "ur": "مَیں"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "ghar",
+     "kind": "word",
+     "gloss": "home",
+     "base": "",
+     "ur": "گھر"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "ko",
+     "kind": "particle",
+     "gloss": "for",
+     "base": "",
+     "ur": "کو"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "taras",
+     "kind": "word",
+     "gloss": "longing",
+     "base": "yearning",
+     "ur": "ترس"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 8,
+     "end": 8,
+     "roman": "rahā",
+     "kind": "word",
+     "gloss": "staying",
+     "base": "",
+     "ur": "رہا"
+    },
+    {
+     "id": "u9",
+     "line": 0,
+     "start": 9,
+     "end": 9,
+     "roman": "hūñ",
+     "kind": "word",
+     "gloss": "am",
+     "base": "",
+     "ur": "ہوں"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "sāthī",
+     "kind": "word",
+     "gloss": "companions",
+     "base": "",
+     "ur": "ساتھی"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "to",
+     "kind": "particle",
+     "gloss": "indeed",
+     "base": "",
+     "ur": "تو"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "haiñ",
+     "kind": "word",
+     "gloss": "are",
+     "base": "",
+     "ur": "ہیں"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "vatan",
+     "kind": "word",
+     "gloss": "homeland",
+     "base": "",
+     "ur": "وطن"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "meñ",
+     "kind": "particle",
+     "gloss": "in",
+     "base": "",
+     "ur": "میں،"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "maiñ",
+     "kind": "word",
+     "gloss": "I",
+     "base": "",
+     "ur": "مَیں"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "ḳaid",
+     "kind": "word",
+     "gloss": "captivity",
+     "base": "imprisonment",
+     "ur": "قید"
+    },
+    {
+     "id": "u17",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "meñ",
+     "kind": "particle",
+     "gloss": "in",
+     "base": "",
+     "ur": "میں"
+    },
+    {
+     "id": "u18",
+     "line": 1,
+     "start": 8,
+     "end": 8,
+     "roman": "paṛā",
+     "kind": "word",
+     "gloss": "fallen",
+     "base": "stuck",
+     "ur": "پڑا"
+    },
+    {
+     "id": "u19",
+     "line": 1,
+     "start": 9,
+     "end": 9,
+     "roman": "hūñ",
+     "kind": "word",
+     "gloss": "am",
+     "base": "",
+     "ur": "ہوں"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u1",
+      "u2"
+     ],
+     "gloss": "unfortunate"
+    },
+    {
+     "id": "p2",
+     "units": [
+      "u7",
+      "u8",
+      "u9"
+     ],
+     "gloss": "longing for"
+    },
+    {
+     "id": "p3",
+     "units": [
+      "u16",
+      "u17",
+      "u18",
+      "u19"
+     ],
+     "gloss": "trapped in captivity"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "How",
+      "units": [
+       "u0"
+      ]
+     },
+     {
+      "text": "bad",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "fortune",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "am",
+      "units": [
+       "u3"
+      ]
+     },
+     {
+      "text": "I",
+      "units": [
+       "u4"
+      ]
+     },
+     {
+      "text": "home",
+      "units": [
+       "u5"
+      ]
+     },
+     {
+      "text": "for",
+      "units": [
+       "u6"
+      ]
+     },
+     {
+      "text": "longing",
+      "units": [
+       "u7"
+      ]
+     },
+     {
+      "text": "staying",
+      "units": [
+       "u8"
+      ]
+     },
+     {
+      "text": "am",
+      "units": [
+       "u9"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "Companions",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "indeed",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "are",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "homeland",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "in",
+      "units": [
+       "u14"
+      ]
+     },
+     {
+      "text": "I",
+      "units": [
+       "u15"
+      ]
+     },
+     {
+      "text": "captivity",
+      "units": [
+       "u16"
+      ]
+     },
+     {
+      "text": "in",
+      "units": [
+       "u17"
+      ]
+     },
+     {
+      "text": "fallen",
+      "units": [
+       "u18"
+      ]
+     },
+     {
+      "text": "am",
+      "units": [
+       "u19"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "How wretched I am, longing for my home,",
+    "My kin are in the homeland, while I dwell in this cage."
+   ],
+   "notes": [
+    "The contrast between 'vatan' (homeland) and 'ḳaid' (captivity) emphasizes the bird's isolation.",
+    "Tarasna implies a deep, painful yearning for something lost.",
+    "The use of 'to' adds an emphatic tone of irony to the companions' freedom."
+   ],
+   "role": "Shifts the focus from nostalgic memories to the current agony of isolation and misfortune.",
+   "attempts": 2,
+   "cost": 0.00968645
+  },
+  {
+   "stanza": 1,
+   "first_line": 2,
+   "ur": [
+    "آئی بہار، کلیاں پھُولوں کی ہنس رہی ہیں",
+    "مَیں اس اندھیرے گھر میں قسمت کو رو رہا ہوں"
+   ],
+   "roman": [
+    "āī bahār kaliyāñ phūloñ kī hañs rahī haiñ",
+    "maiñ is andhere ghar maiñ ḳismat ko ro rahā hūñ"
+   ],
+   "index": 6,
+   "words": [
+    [
+     "آئی",
+     "بہار،",
+     "کلیاں",
+     "پھُولوں",
+     "کی",
+     "ہنس",
+     "رہی",
+     "ہیں"
+    ],
+    [
+     "مَیں",
+     "اس",
+     "اندھیرے",
+     "گھر",
+     "میں",
+     "قسمت",
+     "کو",
+     "رو",
+     "رہا",
+     "ہوں"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u0",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "āī",
+     "kind": "word",
+     "gloss": "came",
+     "base": "",
+     "ur": "آئی"
+    },
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "bahār",
+     "kind": "word",
+     "gloss": "spring",
+     "base": "",
+     "ur": "بہار،"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "kaliyāñ",
+     "kind": "word",
+     "gloss": "buds",
+     "base": "",
+     "ur": "کلیاں"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "phūloñ",
+     "kind": "word",
+     "gloss": "flowers",
+     "base": "",
+     "ur": "پھُولوں"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "kī",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کی"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "hañs",
+     "kind": "word",
+     "gloss": "laugh",
+     "base": "",
+     "ur": "ہنس"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "rahī",
+     "kind": "word",
+     "gloss": "continuing",
+     "base": "",
+     "ur": "رہی"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "haiñ",
+     "kind": "word",
+     "gloss": "are",
+     "base": "",
+     "ur": "ہیں"
+    },
+    {
+     "id": "u8",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "maiñ",
+     "kind": "word",
+     "gloss": "I",
+     "base": "",
+     "ur": "مَیں"
+    },
+    {
+     "id": "u9",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "is",
+     "kind": "word",
+     "gloss": "this",
+     "base": "",
+     "ur": "اس"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "andhere",
+     "kind": "word",
+     "gloss": "dark",
+     "base": "",
+     "ur": "اندھیرے"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "ghar",
+     "kind": "word",
+     "gloss": "house",
+     "base": "home",
+     "ur": "گھر"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "maiñ",
+     "kind": "particle",
+     "gloss": "in",
+     "base": "",
+     "ur": "میں"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "ḳismat",
+     "kind": "word",
+     "gloss": "fate",
+     "base": "",
+     "ur": "قسمت"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "ko",
+     "kind": "particle",
+     "gloss": "at",
+     "base": "",
+     "ur": "کو"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "ro",
+     "kind": "word",
+     "gloss": "weep",
+     "base": "",
+     "ur": "رو"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 8,
+     "end": 8,
+     "roman": "rahā",
+     "kind": "word",
+     "gloss": "continuing",
+     "base": "",
+     "ur": "رہا"
+    },
+    {
+     "id": "u17",
+     "line": 1,
+     "start": 9,
+     "end": 9,
+     "roman": "hūñ",
+     "kind": "word",
+     "gloss": "am",
+     "base": "",
+     "ur": "ہوں"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u5",
+      "u6",
+      "u7"
+     ],
+     "gloss": "are laughing"
+    },
+    {
+     "id": "p2",
+     "units": [
+      "u15",
+      "u16",
+      "u17"
+     ],
+     "gloss": "am weeping"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "Came",
+      "units": [
+       "u0"
+      ]
+     },
+     {
+      "text": "spring,",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "buds",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "of flowers",
+      "units": [
+       "u3",
+       "u4"
+      ]
+     },
+     {
+      "text": "are laughing",
+      "units": [
+       "u5",
+       "u6",
+       "u7"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "I",
+      "units": [
+       "u8"
+      ]
+     },
+     {
+      "text": "this",
+      "units": [
+       "u9"
+      ]
+     },
+     {
+      "text": "dark",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "house",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "in",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "fate",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "at",
+      "units": [
+       "u14"
+      ]
+     },
+     {
+      "text": "am weeping",
+      "units": [
+       "u15",
+       "u16",
+       "u17"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "Spring has come, and flower-buds are laughing;",
+    "While in this dark cell, I weep for my fate."
+   ],
+   "notes": [
+    "The contrast between the 'laughing' (hañs) buds and the 'weeping' (ro) bird emphasizes the bird's isolation.",
+    "The word 'ghar' (house) is used ironically to refer to the cage, highlighting the loss of a true home.",
+    "The blooming spring serves as a cruel reminder of the freedom the bird has lost."
+   ],
+   "role": "Contrasts the external joy of nature with the bird's internal despair and isolation.",
+   "attempts": 1,
+   "cost": 0.002279
+  },
+  {
+   "stanza": 1,
+   "first_line": 4,
+   "ur": [
+    "اس قید کا الٰہی! دُکھڑا کسے سُناؤں",
+    "ڈر ہے یہیں قفس میں مَیں غم سے مر نہ جاؤں"
+   ],
+   "roman": [
+    "is qaid kā ilāhī dukhrā kise sunāūñ",
+    "ḍar hai yahīñ qafas meñ maiñ ġham se mar na jāūñ"
+   ],
+   "index": 7,
+   "words": [
+    [
+     "اس",
+     "قید",
+     "کا",
+     "الٰہی!",
+     "دُکھڑا",
+     "کسے",
+     "سُناؤں"
+    ],
+    [
+     "ڈر",
+     "ہے",
+     "یہیں",
+     "قفس",
+     "میں",
+     "مَیں",
+     "غم",
+     "سے",
+     "مر",
+     "نہ",
+     "جاؤں"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u0",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "is",
+     "kind": "word",
+     "gloss": "this",
+     "base": "",
+     "ur": "اس"
+    },
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "qaid",
+     "kind": "word",
+     "gloss": "captivity",
+     "base": "",
+     "ur": "قید"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "kā",
+     "kind": "particle",
+     "gloss": "of",
+     "base": "",
+     "ur": "کا"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "ilāhī",
+     "kind": "word",
+     "gloss": "O God!",
+     "base": "divine",
+     "ur": "الٰہی!"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "dukhrā",
+     "kind": "word",
+     "gloss": "tale of woe",
+     "base": "small grievance",
+     "ur": "دُکھڑا"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "kise",
+     "kind": "word",
+     "gloss": "to whom",
+     "base": "",
+     "ur": "کسے"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "sunāūñ",
+     "kind": "word",
+     "gloss": "should I tell",
+     "base": "to make heard",
+     "ur": "سُناؤں"
+    },
+    {
+     "id": "u7",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "ḍar",
+     "kind": "word",
+     "gloss": "fear",
+     "base": "",
+     "ur": "ڈر"
+    },
+    {
+     "id": "u8",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "hai",
+     "kind": "word",
+     "gloss": "is",
+     "base": "",
+     "ur": "ہے"
+    },
+    {
+     "id": "u9",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "yahīñ",
+     "kind": "word",
+     "gloss": "right here",
+     "base": "",
+     "ur": "یہیں"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "qafas",
+     "kind": "word",
+     "gloss": "cage",
+     "base": "",
+     "ur": "قفس"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "meñ",
+     "kind": "particle",
+     "gloss": "in",
+     "base": "",
+     "ur": "میں"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "maiñ",
+     "kind": "word",
+     "gloss": "I",
+     "base": "",
+     "ur": "مَیں"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "ġham",
+     "kind": "word",
+     "gloss": "grief",
+     "base": "",
+     "ur": "غم"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "se",
+     "kind": "particle",
+     "gloss": "from",
+     "base": "",
+     "ur": "سے"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 8,
+     "end": 8,
+     "roman": "mar",
+     "kind": "word",
+     "gloss": "die",
+     "base": "",
+     "ur": "مر"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 9,
+     "end": 9,
+     "roman": "na",
+     "kind": "particle",
+     "gloss": "not",
+     "base": "",
+     "ur": "نہ"
+    },
+    {
+     "id": "u17",
+     "line": 1,
+     "start": 10,
+     "end": 10,
+     "roman": "jāūñ",
+     "kind": "word",
+     "gloss": "go",
+     "base": "to go",
+     "ur": "جاؤں"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u15",
+      "u16",
+      "u17"
+     ],
+     "gloss": "might die / lest I die"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "this",
+      "units": [
+       "u0"
+      ]
+     },
+     {
+      "text": "captivity",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "of",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "O God!",
+      "units": [
+       "u3"
+      ]
+     },
+     {
+      "text": "tale of woe",
+      "units": [
+       "u4"
+      ]
+     },
+     {
+      "text": "to whom",
+      "units": [
+       "u5"
+      ]
+     },
+     {
+      "text": "should I tell",
+      "units": [
+       "u6"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "Fear",
+      "units": [
+       "u7"
+      ]
+     },
+     {
+      "text": "is",
+      "units": [
+       "u8"
+      ]
+     },
+     {
+      "text": "right here",
+      "units": [
+       "u9"
+      ]
+     },
+     {
+      "text": "cage",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "in",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "I",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "grief",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "from",
+      "units": [
+       "u14"
+      ]
+     },
+     {
+      "text": "might die",
+      "units": [
+       "u15",
+       "u16",
+       "u17"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "O God, to whom shall I tell the tale of this captivity?",
+    "I fear that in this very cage, I may die of grief."
+   ],
+   "notes": [
+    "Dukhrā is a diminutive of dukh (pain), suggesting a humble or pathetic lament.",
+    "Qafas (cage) is a classical symbol for both physical imprisonment and political oppression.",
+    "The phrase 'mar na jāūñ' uses the auxiliary verb 'jāūñ' to indicate a completed or resulting state of death."
+   ],
+   "role": "Shifts the bird's lament from personal misfortune to a direct, desperate prayer to the Divine.",
+   "attempts": 1,
+   "cost": 0.002761
+  },
+  {
+   "stanza": 2,
+   "first_line": 0,
+   "ur": [
+    "جب سے چمن چھُٹا ہے، یہ حال ہو گیا ہے",
+    "دل غم کو کھا رہا ہے، غم دل کو کھا رہا ہے"
+   ],
+   "roman": [
+    "jab se chaman chhuṭā hai ye hāl ho gayā hai",
+    "dil ġham ko khā rahā hai ġham dil ko khā rahā hai"
+   ],
+   "index": 8,
+   "words": [
+    [
+     "جب",
+     "سے",
+     "چمن",
+     "چھُٹا",
+     "ہے،",
+     "یہ",
+     "حال",
+     "ہو",
+     "گیا",
+     "ہے"
+    ],
+    [
+     "دل",
+     "غم",
+     "کو",
+     "کھا",
+     "رہا",
+     "ہے،",
+     "غم",
+     "دل",
+     "کو",
+     "کھا",
+     "رہا",
+     "ہے"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u0",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "jab",
+     "kind": "word",
+     "gloss": "when",
+     "base": "",
+     "ur": "جب"
+    },
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "se",
+     "kind": "particle",
+     "gloss": "since",
+     "base": "",
+     "ur": "سے"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "chaman",
+     "kind": "word",
+     "gloss": "garden",
+     "base": "garden",
+     "ur": "چمن"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "chhuṭā",
+     "kind": "word",
+     "gloss": "was left",
+     "base": "to be left/separated",
+     "ur": "چھُٹا"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "hai",
+     "kind": "particle",
+     "gloss": "is",
+     "base": "",
+     "ur": "ہے،"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "ye",
+     "kind": "word",
+     "gloss": "this",
+     "base": "",
+     "ur": "یہ"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "hāl",
+     "kind": "word",
+     "gloss": "state",
+     "base": "condition",
+     "ur": "حال"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "ho",
+     "kind": "word",
+     "gloss": "become",
+     "base": "",
+     "ur": "ہو"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 8,
+     "end": 8,
+     "roman": "gayā",
+     "kind": "word",
+     "gloss": "gone",
+     "base": "",
+     "ur": "گیا"
+    },
+    {
+     "id": "u9",
+     "line": 0,
+     "start": 9,
+     "end": 9,
+     "roman": "hai",
+     "kind": "particle",
+     "gloss": "is",
+     "base": "",
+     "ur": "ہے"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "dil",
+     "kind": "word",
+     "gloss": "heart",
+     "base": "",
+     "ur": "دل"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "ġham",
+     "kind": "word",
+     "gloss": "grief",
+     "base": "sorrow",
+     "ur": "غم"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "ko",
+     "kind": "particle",
+     "gloss": "to",
+     "base": "",
+     "ur": "کو"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "khā",
+     "kind": "word",
+     "gloss": "eating",
+     "base": "to eat",
+     "ur": "کھا"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "rahā",
+     "kind": "word",
+     "gloss": "continuing",
+     "base": "",
+     "ur": "رہا"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "hai",
+     "kind": "particle",
+     "gloss": "is",
+     "base": "",
+     "ur": "ہے،"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "ġham",
+     "kind": "word",
+     "gloss": "grief",
+     "base": "sorrow",
+     "ur": "غم"
+    },
+    {
+     "id": "u17",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "dil",
+     "kind": "word",
+     "gloss": "heart",
+     "base": "",
+     "ur": "دل"
+    },
+    {
+     "id": "u18",
+     "line": 1,
+     "start": 8,
+     "end": 8,
+     "roman": "ko",
+     "kind": "particle",
+     "gloss": "to",
+     "base": "",
+     "ur": "کو"
+    },
+    {
+     "id": "u19",
+     "line": 1,
+     "start": 9,
+     "end": 9,
+     "roman": "khā",
+     "kind": "word",
+     "gloss": "eating",
+     "base": "to eat",
+     "ur": "کھا"
+    },
+    {
+     "id": "u20",
+     "line": 1,
+     "start": 10,
+     "end": 10,
+     "roman": "rahā",
+     "kind": "word",
+     "gloss": "continuing",
+     "base": "",
+     "ur": "رہا"
+    },
+    {
+     "id": "u21",
+     "line": 1,
+     "start": 11,
+     "end": 11,
+     "roman": "hai",
+     "kind": "particle",
+     "gloss": "is",
+     "base": "",
+     "ur": "ہے"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u7",
+      "u8",
+      "u9"
+     ],
+     "gloss": "has become"
+    },
+    {
+     "id": "p2",
+     "units": [
+      "u13",
+      "u14",
+      "u15"
+     ],
+     "gloss": "is consuming"
+    },
+    {
+     "id": "p3",
+     "units": [
+      "u19",
+      "u20",
+      "u21"
+     ],
+     "gloss": "is consuming"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "Since",
+      "units": [
+       "u0",
+       "u1"
+      ]
+     },
+     {
+      "text": "the garden",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "was left",
+      "units": [
+       "u3",
+       "u4"
+      ]
+     },
+     {
+      "text": "this",
+      "units": [
+       "u5"
+      ]
+     },
+     {
+      "text": "state",
+      "units": [
+       "u6"
+      ]
+     },
+     {
+      "text": "has become",
+      "units": [
+       "u7",
+       "u8",
+       "u9"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "The heart",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "grief",
+      "units": [
+       "u11",
+       "u12"
+      ]
+     },
+     {
+      "text": "is eating",
+      "units": [
+       "u13",
+       "u14",
+       "u15"
+      ]
+     },
+     {
+      "text": "grief",
+      "units": [
+       "u16"
+      ]
+     },
+     {
+      "text": "the heart",
+      "units": [
+       "u17",
+       "u18"
+      ]
+     },
+     {
+      "text": "is eating",
+      "units": [
+       "u19",
+       "u20",
+       "u21"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "Since I was torn from the garden, this is my plight,",
+    "The heart devours its grief, and grief devours the heart."
+   ],
+   "notes": [
+    "Chaman (garden) is a classical symbol for the homeland or a state of freedom.",
+    "The second line uses chiasmus to illustrate the cyclical, inescapable nature of the bird's suffering.",
+    "The phrase 'eating grief' suggests the internalization of pain.",
+    "Conversely, 'grief eating the heart' suggests the destructive power of sorrow."
+   ],
+   "role": "Transitions from the physical description of the cage to the bird's internal psychological torment.",
+   "attempts": 1,
+   "cost": 0.0022476
+  },
+  {
+   "stanza": 2,
+   "first_line": 2,
+   "ur": [
+    "گانا اسے سمجھ کر خوش ہوں نہ سُننے والے",
+    "دُکھّے ہوئے دلوں کی فریاد یہ صدا ہے"
+   ],
+   "roman": [
+    "gānā ise samajh kar khush hoñ na sunne vāle",
+    "dukhe hue dilon kī faryād ye sadā hai"
+   ],
+   "index": 9,
+   "words": [
+    [
+     "گانا",
+     "اسے",
+     "سمجھ",
+     "کر",
+     "خوش",
+     "ہوں",
+     "نہ",
+     "سُننے",
+     "والے"
+    ],
+    [
+     "دُکھّے",
+     "ہوئے",
+     "دلوں",
+     "کی",
+     "فریاد",
+     "یہ",
+     "صدا",
+     "ہے"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u0",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "gānā",
+     "kind": "word",
+     "gloss": "song",
+     "base": "",
+     "ur": "گانا"
+    },
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "ise",
+     "kind": "word",
+     "gloss": "it",
+     "base": "",
+     "ur": "اسے"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 2,
+     "end": 3,
+     "roman": "samajh kar",
+     "kind": "compound",
+     "gloss": "considering",
+     "base": "",
+     "ur": "سمجھ کر"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "khush",
+     "kind": "word",
+     "gloss": "happy",
+     "base": "",
+     "ur": "خوش"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "hoñ",
+     "kind": "word",
+     "gloss": "be",
+     "base": "",
+     "ur": "ہوں"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "na",
+     "kind": "particle",
+     "gloss": "not",
+     "base": "",
+     "ur": "نہ"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 7,
+     "end": 8,
+     "roman": "sunne vāle",
+     "kind": "compound",
+     "gloss": "listeners",
+     "base": "",
+     "ur": "سُننے والے"
+    },
+    {
+     "id": "u7",
+     "line": 1,
+     "start": 0,
+     "end": 1,
+     "roman": "dukhe hue",
+     "kind": "compound",
+     "gloss": "aching",
+     "base": "",
+     "ur": "دُکھّے ہوئے"
+    },
+    {
+     "id": "u8",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "dilon",
+     "kind": "word",
+     "gloss": "hearts",
+     "base": "dil",
+     "ur": "دلوں"
+    },
+    {
+     "id": "u9",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "kī",
+     "kind": "word",
+     "gloss": "of",
+     "base": "",
+     "ur": "کی"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "faryād",
+     "kind": "word",
+     "gloss": "plea",
+     "base": "",
+     "ur": "فریاد"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "ye",
+     "kind": "word",
+     "gloss": "this",
+     "base": "",
+     "ur": "یہ"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "sadā",
+     "kind": "word",
+     "gloss": "voice",
+     "base": "",
+     "ur": "صدا"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "hai",
+     "kind": "word",
+     "gloss": "is",
+     "base": "",
+     "ur": "ہے"
+    }
+   ],
+   "phrases": [],
+   "literal": [
+    [
+     {
+      "text": "Song",
+      "units": [
+       "u0"
+      ]
+     },
+     {
+      "text": "it",
+      "units": [
+       "u1"
+      ]
+     },
+     {
+      "text": "considering",
+      "units": [
+       "u2"
+      ]
+     },
+     {
+      "text": "happy",
+      "units": [
+       "u3"
+      ]
+     },
+     {
+      "text": "be",
+      "units": [
+       "u4"
+      ]
+     },
+     {
+      "text": "not",
+      "units": [
+       "u5"
+      ]
+     },
+     {
+      "text": "listeners",
+      "units": [
+       "u6"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "Aching",
+      "units": [
+       "u7"
+      ]
+     },
+     {
+      "text": "hearts",
+      "units": [
+       "u8"
+      ]
+     },
+     {
+      "text": "of",
+      "units": [
+       "u9"
+      ]
+     },
+     {
+      "text": "plea",
+      "units": [
+       "u10"
+      ]
+     },
+     {
+      "text": "this",
+      "units": [
+       "u11"
+      ]
+     },
+     {
+      "text": "voice",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "is",
+      "units": [
+       "u13"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "O listeners, do not be glad thinking this is a song,",
+    "This voice is the cry of hearts in pain."
+   ],
+   "notes": [
+    "The bird's song is a common poetic trope, but here it is subverted as a lament.",
+    "Faryād implies a desperate plea for mercy, justice, or liberation."
+   ],
+   "role": "Shifts the bird's address from internal grief to the external listener and captor.",
+   "attempts": 3,
+   "cost": 0.01966815
+  },
+  {
+   "stanza": 2,
+   "first_line": 4,
+   "ur": [
+    "آزاد مجھ کو کر دے، او قید کرنے والے!",
+    "مَیں بے زباں ہوں قیدی، تو چھوڑ کر دُعا لے"
+   ],
+   "roman": [
+    "āzād mujh ko kar de o qaid karne vāle",
+    "maiñ be zabāñ hūñ qaidī tū chhoṛ kar duʿā le"
+   ],
+   "index": 10,
+   "words": [
+    [
+     "آزاد",
+     "مجھ",
+     "کو",
+     "کر",
+     "دے،",
+     "او",
+     "قید",
+     "کرنے",
+     "والے!"
+    ],
+    [
+     "مَیں",
+     "بے",
+     "زباں",
+     "ہوں",
+     "قیدی،",
+     "تو",
+     "چھوڑ",
+     "کر",
+     "دُعا",
+     "لے"
+    ]
+   ],
+   "units": [
+    {
+     "id": "u0",
+     "line": 0,
+     "start": 0,
+     "end": 0,
+     "roman": "āzād",
+     "kind": "word",
+     "gloss": "free",
+     "base": "",
+     "ur": "آزاد"
+    },
+    {
+     "id": "u1",
+     "line": 0,
+     "start": 1,
+     "end": 1,
+     "roman": "mujh",
+     "kind": "word",
+     "gloss": "me",
+     "base": "",
+     "ur": "مجھ"
+    },
+    {
+     "id": "u2",
+     "line": 0,
+     "start": 2,
+     "end": 2,
+     "roman": "ko",
+     "kind": "particle",
+     "gloss": "",
+     "base": "",
+     "ur": "کو"
+    },
+    {
+     "id": "u3",
+     "line": 0,
+     "start": 3,
+     "end": 3,
+     "roman": "kar",
+     "kind": "word",
+     "gloss": "make",
+     "base": "",
+     "ur": "کر"
+    },
+    {
+     "id": "u4",
+     "line": 0,
+     "start": 4,
+     "end": 4,
+     "roman": "de",
+     "kind": "word",
+     "gloss": "give",
+     "base": "",
+     "ur": "دے،"
+    },
+    {
+     "id": "u5",
+     "line": 0,
+     "start": 5,
+     "end": 5,
+     "roman": "o",
+     "kind": "particle",
+     "gloss": "oh",
+     "base": "",
+     "ur": "او"
+    },
+    {
+     "id": "u6",
+     "line": 0,
+     "start": 6,
+     "end": 6,
+     "roman": "qaid",
+     "kind": "word",
+     "gloss": "imprisonment",
+     "base": "",
+     "ur": "قید"
+    },
+    {
+     "id": "u7",
+     "line": 0,
+     "start": 7,
+     "end": 7,
+     "roman": "karne",
+     "kind": "word",
+     "gloss": "doing",
+     "base": "",
+     "ur": "کرنے"
+    },
+    {
+     "id": "u8",
+     "line": 0,
+     "start": 8,
+     "end": 8,
+     "roman": "vāle",
+     "kind": "word",
+     "gloss": "one who does",
+     "base": "",
+     "ur": "والے!"
+    },
+    {
+     "id": "u9",
+     "line": 1,
+     "start": 0,
+     "end": 0,
+     "roman": "maiñ",
+     "kind": "word",
+     "gloss": "I",
+     "base": "",
+     "ur": "مَیں"
+    },
+    {
+     "id": "u10",
+     "line": 1,
+     "start": 1,
+     "end": 1,
+     "roman": "be",
+     "kind": "word",
+     "gloss": "without",
+     "base": "",
+     "ur": "بے"
+    },
+    {
+     "id": "u11",
+     "line": 1,
+     "start": 2,
+     "end": 2,
+     "roman": "zabāñ",
+     "kind": "word",
+     "gloss": "tongue",
+     "base": "",
+     "ur": "زباں"
+    },
+    {
+     "id": "u12",
+     "line": 1,
+     "start": 3,
+     "end": 3,
+     "roman": "hūñ",
+     "kind": "word",
+     "gloss": "am",
+     "base": "",
+     "ur": "ہوں"
+    },
+    {
+     "id": "u13",
+     "line": 1,
+     "start": 4,
+     "end": 4,
+     "roman": "qaidī",
+     "kind": "word",
+     "gloss": "prisoner",
+     "base": "",
+     "ur": "قیدی،"
+    },
+    {
+     "id": "u14",
+     "line": 1,
+     "start": 5,
+     "end": 5,
+     "roman": "tū",
+     "kind": "word",
+     "gloss": "you",
+     "base": "",
+     "ur": "تو"
+    },
+    {
+     "id": "u15",
+     "line": 1,
+     "start": 6,
+     "end": 6,
+     "roman": "chhoṛ",
+     "kind": "word",
+     "gloss": "release",
+     "base": "",
+     "ur": "چھوڑ"
+    },
+    {
+     "id": "u16",
+     "line": 1,
+     "start": 7,
+     "end": 7,
+     "roman": "kar",
+     "kind": "word",
+     "gloss": "having done",
+     "base": "",
+     "ur": "کر"
+    },
+    {
+     "id": "u17",
+     "line": 1,
+     "start": 8,
+     "end": 8,
+     "roman": "duʿā",
+     "kind": "word",
+     "gloss": "prayer",
+     "base": "",
+     "ur": "دُعا"
+    },
+    {
+     "id": "u18",
+     "line": 1,
+     "start": 9,
+     "end": 9,
+     "roman": "le",
+     "kind": "word",
+     "gloss": "take",
+     "base": "",
+     "ur": "لے"
+    }
+   ],
+   "phrases": [
+    {
+     "id": "p1",
+     "units": [
+      "u0",
+      "u3",
+      "u4"
+     ],
+     "gloss": "set free"
+    },
+    {
+     "id": "p2",
+     "units": [
+      "u6",
+      "u7",
+      "u8"
+     ],
+     "gloss": "captor"
+    },
+    {
+     "id": "p3",
+     "units": [
+      "u10",
+      "u11"
+     ],
+     "gloss": "voiceless"
+    }
+   ],
+   "literal": [
+    [
+     {
+      "text": "Free",
+      "units": [
+       "u0"
+      ]
+     },
+     {
+      "text": "me",
+      "units": [
+       "u1",
+       "u2"
+      ]
+     },
+     {
+      "text": "make give",
+      "units": [
+       "u3",
+       "u4"
+      ]
+     },
+     {
+      "text": "oh",
+      "units": [
+       "u5"
+      ]
+     },
+     {
+      "text": "imprisoning one",
+      "units": [
+       "u6",
+       "u7",
+       "u8"
+      ]
+     }
+    ],
+    [
+     {
+      "text": "I",
+      "units": [
+       "u9"
+      ]
+     },
+     {
+      "text": "voiceless",
+      "units": [
+       "u10",
+       "u11"
+      ]
+     },
+     {
+      "text": "am",
+      "units": [
+       "u12"
+      ]
+     },
+     {
+      "text": "prisoner",
+      "units": [
+       "u13"
+      ]
+     },
+     {
+      "text": "you",
+      "units": [
+       "u14"
+      ]
+     },
+     {
+      "text": "having released",
+      "units": [
+       "u15",
+       "u16"
+      ]
+     },
+     {
+      "text": "prayer",
+      "units": [
+       "u17"
+      ]
+     },
+     {
+      "text": "take",
+      "units": [
+       "u18"
+      ]
+     }
+    ]
+   ],
+   "poetic": [
+    "Set me free, O you who hold me bound!",
+    "A voiceless prisoner I am; release me and receive my prayer."
+   ],
+   "notes": [
+    "be-zabāñ (voiceless) highlights the bird's helplessness and the irony that its song is actually a cry of pain.",
+    "The request to 'take a prayer' suggests a spiritual exchange: mercy in return for a blessing.",
+    "The address 'qaid karne vāle' shifts the poem from a personal lament to a direct plea for mercy."
+   ],
+   "role": "The final, desperate plea for mercy and liberation, addressing the captor directly to conclude the poem.",
+   "attempts": 2,
+   "cost": 0.00787345
+  }
+ ],
+ "cost": 0.0724,
+ "attempts": 15
+}

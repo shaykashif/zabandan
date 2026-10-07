@@ -1,0 +1,39 @@
+# Conventional terms of classical Urdu poetry, given to the model with every annotation
+# request. Most serious errors in the blind scoring were culture-specific terms like
+# these (qashqa read as "hookah", "cap" or "lock of hair"; khat read only as "contour").
+# Keep entries short: the sense the poetry uses, not a dictionary list.
+
+terms:
+  qashqa (قشقہ): forehead mark worn by Hindus, like a tilak; in the ghazal, the badge of the "infidel of love"
+  zunnār (زنار): sacred thread or cord worn round the waist by non-Muslims; with qashqa, a sign of love's heresy
+  dair (دیر): temple or monastery, a non-Muslim place of worship; the ghazal's opposite of the mosque and Kaaba
+  but, butāñ (بت، بتاں): idol, idols; the beloved as an idol the lover worships
+  kāfir (کافر): infidel; also the cruel or irresistible beloved, or the lover who has abandoned orthodoxy
+  ḳhat (خط): three senses often in play together; the first down on a young beloved's cheek, a line or stroke of writing, and a letter
+  chilman (چلمن): split-bamboo blind hung for purdah, through which one can half see
+  sāqī (ساقی): cupbearer who pours the wine; also the spiritual guide, the beloved or God
+  mai, bāda, sharāb (مے، بادہ، شراب): wine; literal, or divine love and mystical intoxication; poems often leave both open
+  mai-ḳhāna, mai-kada (مے خانہ، مے کدہ): tavern; also the Sufi gathering or the state of ecstasy
+  vāʿiz, shaiḳh, zāhid (واعظ، شیخ، زاہد): preacher, religious elder, ascetic; the orthodox figures the poetry mocks for hypocrisy
+  nāsih (ناصح): adviser who tells the lover to give up love
+  raqīb, ġhair (رقیب، غیر): the rival for the beloved's favour
+  parvāna, shamʿa (پروانہ، شمع): moth and candle; the lover who burns himself in the beloved's flame
+  gul, bulbul (گل، بلبل): rose and nightingale; the beloved and the lover who sings to her
+  qafas, ṣayyād, āshiyāna (قفس، صیاد، آشیانہ): cage, bird-catcher, nest; captivity and lost home, often political
+  chaman, gulshan, bāġh (چمن، گلشن، باغ): garden; the world, the homeland or the beloved's company
+  zulf, gesū (زلف، گیسو): tresses; a snare for the heart, and the long dark night of separation
+  kūcha, kū-e-yār (کوچہ، کوئے یار): the beloved's lane; the place the lover longs to be, even to be buried
+  junūñ, dīvāna (جنوں، دیوانہ): the madness of love, and the madman of love
+  dasht, sahrā (دشت، صحرا): wilderness where the mad lover wanders, after Majnun
+  qais, majnūñ, lailā (قیس، مجنوں، لیلیٰ): Qais, called Majnun ("mad"), who went mad for love of Laila
+  farhād, shīrīñ, koh-kan (فرہاد، شیریں، کوہ کن): Farhad who cut through a mountain for Shirin; the mountain-digger
+  ḳhizr (خضر): the immortal guide who found the water of life; a figure of long life and guidance
+  jām-e-jam (جام جم): the cup of the legendary king Jamshid, in which the whole world could be seen
+  masīhā, ʿīsā (مسیحا، عیسیٰ): Jesus, who could revive the dead; the beloved or physician who could heal the lover
+  yūsuf (یوسف): Joseph, the type of perfect beauty
+  manṣūr (منصور): Mansur al-Hallaj, executed for saying "I am the Truth"; a martyr of mystical love
+  ḳhuld, firdaus, jannat (خلد، فردوس، جنت): paradise; often with Adam's expulsion from it
+  ādam (آدم): Adam, the first man, expelled from paradise; also simply "a human being" (aadmī)
+  ḳhudī (خودی): in Iqbal, selfhood, the self made strong and creative; not "ego" or "pride"
+  rekhta (ریختہ): the old name for Urdu, especially Urdu poetry
+  taḳhalluṣ: the poet's pen name, usually placed in a ghazal's final couplet (maqta)
