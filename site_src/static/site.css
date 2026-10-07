@@ -66,7 +66,10 @@ body::after{left:calc(50% + var(--half) + 40px)}
 .credit a{text-decoration:underline;text-decoration-color:var(--dim);text-underline-offset:3px}
 
 /* ── Index ─────────────────────────────────────────────── */
-.masthead{display:flex;align-items:baseline;gap:14px;margin-bottom:40px}
+.masthead{display:flex;align-items:baseline;gap:14px;margin-bottom:2px}
+.pron{margin:0 0 40px;color:var(--dim);font-size:14px}
+.pron [lang="ur-Latn"]{font-style:italic;color:var(--fg)}
+.pron .ipa{font-family:"Charis SIL","Doulos SIL","Gentium Plus","Segoe UI","Noto Sans",sans-serif}
 .masthead h1{margin:0;font-size:20px;font-weight:600;line-height:1.2}
 .masthead .ur{font-size:22px;line-height:1.8;color:var(--gold)}
 .intro p{font-size:17px;line-height:1.65}
